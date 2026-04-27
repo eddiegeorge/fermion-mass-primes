@@ -1,0 +1,212 @@
+==========================================================================================
+FERMION MASS PRIMES TEST 15
+Sector prime-set examination
+==========================================================================================
+Common scales: ['M_Z', '1_TeV', '3_TeV', '10_TeV', '100_TeV', '1e7_GeV', '1e9_GeV', '1e12_GeV', '1e16_GeV']
+Sectors: ['up', 'down', 'lepton']
+Random trials: T2=100000, T3=10000, T4=10000, T5=10000
+Seed: 42
+
+Cells built: 54 (= 6 ratios × 9 common scales)
+Candidates: 346
+==========================================================================================
+T0 — OCCUPANCY TABLE
+==========================================================================================
+
+UP sector (18 cells, 9 common scales):
+   prime  count ratios                 substrates   lock status         
+  ────── ────── ────────────────────── ──────────── ────────────────────
+      37      1 mt/mc                  a=3          mt/mc:walking       
+      71      1 mt/mc                  a=2          mt/mc:walking       
+      73      1 mt/mc                  a=2          mt/mc:walking       
+     127      6 mc/mu                  a=2          mc/mu:walking       
+     139      1 mt/mc                  a=1          mt/mc:walking       
+     151      1 mt/mc                  a=1          mt/mc:walking       
+     271      1 mt/mc                  a=0          mt/mc:walking       
+     277      1 mt/mc                  a=0          mt/mc:walking       
+     281      1 mt/mc                  a=0          mt/mc:walking       
+     307      1 mt/mc                  a=0          mt/mc:walking       
+     503      3 mc/mu                  a=0          mc/mu:walking       
+  Substrate counts: a=0: 7/18 (39%), a=1: 2/18 (11%), a=2: 8/18 (44%), a=3: 1/18 (6%)
+
+DOWN sector (18 cells, 9 common scales):
+   prime  count ratios                 substrates   lock status         
+  ────── ────── ────────────────────── ──────────── ────────────────────
+       5      9 ms/md                  a=2          ms/md:locked        
+      13      5 mb/ms                  a=2          mb/ms:walking       
+      47      3 mb/ms                  a=0          mb/ms:walking       
+      53      1 mb/ms                  a=0          mb/ms:walking       
+  Substrate counts: a=0: 4/18 (22%), a=2: 14/18 (78%)
+
+LEPTON sector (18 cells, 9 common scales):
+   prime  count ratios                 substrates   lock status         
+  ────── ────── ────────────────────── ──────────── ────────────────────
+      17      9 mtau/mmu               a=0          mtau/mmu:locked     
+     211      9 mmu/me                 a=0          mmu/me:locked       
+  Substrate counts: a=0: 18/18 (100%)
+
+==========================================================================================
+T1 — SKIP-PATTERN / WINDOW SPARSITY
+==========================================================================================
+
+sector   primes window          avail  visited  skipped   skip %
+──────── ────── ────────────── ────── ──────── ──────── ────────
+up       11     [37,503]           85       11       74    87.1%
+down     4      [5,53]             14        4       10    71.4%
+lepton   2      [17,211]           41        2       39    95.1%
+
+  up skipped: 41, 43, 47, 53, 59, 61, 67, 79, 83, 89, 97, 101, 103, 107, 109, ... (59 more)
+  down skipped: 7, 11, 17, 19, 23, 29, 31, 37, 41, 43
+  lepton skipped: 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, ... (24 more)
+
+==========================================================================================
+T2 — DISJOINTNESS NULL (window-matched and pooled-window)
+==========================================================================================
+
+Actual cardinalities: up=11, down=4, lepton=2
+Actual pairwise overlaps: {'up∩down': 0, 'up∩lepton': 0, 'down∩lepton': 0}
+Actual total overlap: 0
+
+--- A. Window-matched null (100000 trials) ---
+Window pools: up=85, down=14, lepton=41
+Trials with overlap ≤ actual (0): 55164/100000 (55.16%)
+Trials with zero overlap: 55164/100000 (55.16%)
+Mean random overlap: 0.555
+
+--- B. Pooled-window null (100000 trials) ---
+Pool: odd primes in [5, 503] → 94 primes
+Trials with overlap ≤ actual (0): 42597/100000 (42.60%)
+Trials with zero overlap: 42597/100000 (42.60%)
+Mean random overlap: 0.787
+
+Interpretation:
+  Pooled-window null: actual disjointness is mildly clean but not striking.
+
+==========================================================================================
+T3 — ALGEBRAIC STRUCTURE SCAN
+==========================================================================================
+
+Actual hit counts per sector / property (P(rand ≥ actual) = fraction of random subsets with hits ≥ actual; low = unusually enriched):
+property                      up(n=11)       down(n=4)      lepton(n=2)   
+──────────────────────────── ──────────────────────────────────────────
+≡1 mod 3                      8/11 (  7.9%)   1/4 ( 92.5%)   1/2 ( 74.2%)  
+≡2 mod 3                      3/11 ( 98.3%)   3/4 ( 40.8%)   1/2 ( 76.3%)  
+≡1 mod 4                      4/11 ( 86.0%)   3/4 ( 28.2%)   1/2 ( 72.4%)  
+≡3 mod 4                      7/11 ( 33.1%)   1/4 ( 96.5%)   1/2 ( 79.4%)  
+≡1 mod 6                      8/11 (  7.6%)   1/4 ( 92.6%)   1/2 ( 73.8%)  
+≡5 mod 6                      3/11 ( 98.2%)   3/4 ( 40.1%)   1/2 ( 77.2%)  
+≡1 mod 8                      2/11 ( 76.3%)   0/4 (100.0%)   1/2 ( 35.9%)  
+≡3 mod 8                      2/11 ( 84.3%)   0/4 (100.0%)   1/2 ( 48.0%)  
+≡5 mod 8                      2/11 ( 82.1%)   3/4 (  9.7%)   0/2 (100.0%)  
+≡7 mod 8                      5/11 ( 13.6%)   1/4 ( 79.8%)   0/2 (100.0%)  
+≡1 mod 12                     3/11 ( 50.5%)   1/4 ( 50.5%)   0/2 (100.0%)  
+≡5 mod 12                     1/11 ( 96.0%)   2/4 ( 45.3%)   1/2 ( 46.9%)  
+≡7 mod 12                     5/11 (  9.8%)   0/4 (100.0%)   1/2 ( 49.9%)  
+≡11 mod 12                    2/11 ( 87.6%)   1/4 ( 67.9%)   0/2 (100.0%)  
+Eisenstein split (≡1 mod 3 or =3)  8/11 (  8.1%)   1/4 ( 92.5%)   1/2 ( 74.4%)  
+Gaussian inert (≡3 mod 4)     7/11 ( 33.4%)   1/4 ( 96.4%)   1/2 ( 78.4%)  
+Sophie Germain                1/11 ( 95.3%)   2/4 ( 59.3%)   0/2 (100.0%)  
+Twin participant              6/11 ( 34.6%)   2/4 ( 95.9%)   1/2 ( 83.0%)  
+Mersenne (2^n − 1)            1/11 ( 13.1%)   0/4 (100.0%)   0/2 (100.0%)  
+Fermat (2^(2^n) + 1)          0/11 (100.0%)   1/4 ( 50.5%)   1/2 (  4.8%)  
+Primorial ±1                  0/11 (100.0%)   1/4 ( 79.3%)   1/2 ( 14.0%)  
+n² + n + 1                    2/11 ( 27.2%)   1/4 ( 79.3%)   1/2 ( 23.0%)  
+n² + 1                        1/11 ( 50.9%)   1/4 ( 67.3%)   1/2 ( 18.6%)  
+4n² + 1                       1/11 ( 51.0%)   1/4 ( 66.9%)   1/2 ( 18.7%)  
+
+==========================================================================================
+T4 — GAP STRUCTURE WITHIN SECTOR
+==========================================================================================
+
+Note: endpoints (sector min and max prime) are fixed in both observed and
+random subsets, so mean gap is identical by construction = (hi-lo)/(n-1).
+Only gap variance / regularity is informative.
+
+up sector: 11 primes, gaps = [34, 2, 54, 12, 12, 120, 6, 4, 26, 196]
+  mean gap = 46.60 (= (hi-lo)/(n-1)), variance = 3619.24
+  Variance: actual = 3619.24, null mean = 1676.37
+  P(rand var ≤ actual): 95.9% (low = unusually regular spacing)
+  P(rand var ≥ actual): 4.1% (low = unusually irregular spacing)
+
+down sector: 4 primes, gaps = [8, 34, 6]
+  mean gap = 16.00 (= (hi-lo)/(n-1)), variance = 162.67
+  Variance: actual = 162.67, null mean = 106.14
+  P(rand var ≤ actual): 76.9% (low = unusually regular spacing)
+  P(rand var ≥ actual): 27.6% (low = unusually irregular spacing)
+
+lepton sector: 2 primes, gaps = [194]
+  mean gap = 194.00 (= (hi-lo)/(n-1)), variance = 0.00
+  (n<3, single gap reported descriptively only)
+
+==========================================================================================
+T5 — LOCAL CANDIDATE-DENSITY DIAGNOSTIC
+==========================================================================================
+
+cell                           target     best    res%   cand-   cand+   spacing rand pctile
+────────────────────────── ────────── ──────── ─────── ─────── ─────── ───────── ───────────
+mc/mu@M_Z                     505.682      508  0.458%    1.0%    0.2%     0.59%       10.7%
+mt/mc@M_Z                     271.629      271  0.232%    0.7%    1.1%     0.92%       58.7%
+ms/md@M_Z                      19.870       20  0.654%    5.0%   10.0%     7.50%       83.1%
+mb/ms@M_Z                      53.268       53  0.503%    1.9%    5.7%     3.77%       73.2%
+mmu/me@M_Z                    210.664      211  0.159%    2.4%    0.5%     1.42%       76.5%
+mtau/mmu@M_Z                   16.986       17  0.080%   17.6%   11.8%    14.71%       98.5%
+mc/mu@1_TeV                   505.691      508  0.457%    1.0%    0.2%     0.59%       11.9%
+mt/mc@1_TeV                   277.042      277  0.015%    1.1%    0.4%     0.72%       97.0%
+ms/md@1_TeV                    19.852       20  0.746%    5.0%   10.0%     7.50%       81.5%
+mb/ms@1_TeV                    52.276       52  0.528%    9.6%    1.9%     5.77%       71.0%
+mmu/me@1_TeV                  210.667      211  0.158%    2.4%    0.5%     1.42%       75.7%
+mtau/mmu@1_TeV                 16.986       17  0.080%   17.6%   11.8%    14.71%       98.2%
+mc/mu@3_TeV                   505.137      503  0.423%    0.2%    1.0%     0.60%       14.9%
+mt/mc@3_TeV                   279.390      278  0.497%    0.4%    1.1%     0.72%       25.2%
+ms/md@3_TeV                    19.844       20  0.787%    5.0%   10.0%     7.50%       80.0%
+mb/ms@3_TeV                    52.008       52  0.015%    9.6%    1.9%     5.77%       99.1%
+mmu/me@3_TeV                  210.665      211  0.159%    2.4%    0.5%     1.42%       75.8%
+mtau/mmu@3_TeV                 16.986       17  0.085%   17.6%   11.8%    14.71%       98.2%
+mc/mu@10_TeV                  505.415      503  0.478%    0.2%    1.0%     0.60%       10.0%
+mt/mc@10_TeV                  281.429      281  0.152%    1.1%    0.7%     0.89%       69.1%
+ms/md@10_TeV                   19.836       20  0.826%    5.0%   10.0%     7.50%       79.2%
+mb/ms@10_TeV                   51.488       52  0.995%    9.6%    1.9%     5.77%       48.4%
+mmu/me@10_TeV                 210.663      211  0.160%    2.4%    0.5%     1.42%       76.4%
+mtau/mmu@10_TeV                16.987       17  0.076%   17.6%   11.8%    14.71%       98.3%
+mc/mu@100_TeV                 506.903      508  0.216%    1.0%    0.2%     0.59%       41.0%
+mt/mc@100_TeV                 284.397      284  0.140%    0.4%    2.8%     1.58%       73.3%
+ms/md@100_TeV                  19.821       20  0.901%    5.0%   10.0%     7.50%       77.0%
+mb/ms@100_TeV                  50.901       52  2.159%    9.6%    1.9%     5.77%       18.5%
+mmu/me@100_TeV                210.661      211  0.161%    2.4%    0.5%     1.42%       75.6%
+mtau/mmu@100_TeV               16.987       17  0.074%   17.6%   11.8%    14.71%       98.6%
+mc/mu@1e7_GeV                 505.695      508  0.456%    1.0%    0.2%     0.59%       11.8%
+mt/mc@1e7_GeV                 291.081      292  0.316%    2.7%    0.3%     1.54%       44.3%
+ms/md@1e7_GeV                  19.897       20  0.518%    5.0%   10.0%     7.50%       86.9%
+mb/ms@1e7_GeV                  49.793       52  4.433%    9.6%    1.9%     5.77%        3.0%
+mmu/me@1e7_GeV                210.666      211  0.159%    2.4%    0.5%     1.42%       75.8%
+mtau/mmu@1e7_GeV               16.987       17  0.074%   17.6%   11.8%    14.71%       98.5%
+mc/mu@1e9_GeV                 507.692      508  0.061%    1.0%    0.2%     0.59%       80.6%
+mt/mc@1e9_GeV                 294.848      296  0.391%    1.0%    0.7%     0.84%       35.1%
+ms/md@1e9_GeV                  19.770       20  1.163%    5.0%   10.0%     7.50%       70.6%
+mb/ms@1e9_GeV                  49.070       47  4.218%    2.1%   10.6%     6.38%        4.2%
+mmu/me@1e9_GeV                210.664      211  0.160%    2.4%    0.5%     1.42%       76.3%
+mtau/mmu@1e9_GeV               16.986       17  0.084%   17.6%   11.8%    14.71%       98.2%
+mc/mu@1e12_GeV                507.418      508  0.115%    1.0%    0.2%     0.59%       64.6%
+mt/mc@1e12_GeV                300.468      302  0.510%    1.3%    1.7%     1.49%       21.4%
+ms/md@1e12_GeV                 20.000       20  0.000%    5.0%   10.0%     7.50%      100.0%
+mb/ms@1e12_GeV                 47.933       47  1.947%    2.1%   10.6%     6.38%       26.0%
+mmu/me@1e12_GeV               210.662      211  0.160%    2.4%    0.5%     1.42%       76.7%
+mtau/mmu@1e12_GeV              16.987       17  0.076%   17.6%   11.8%    14.71%       98.5%
+mc/mu@1e16_GeV                505.226      503  0.441%    0.2%    1.0%     0.60%       12.7%
+mt/mc@1e16_GeV                307.172      307  0.056%    1.6%    1.3%     1.47%       88.2%
+ms/md@1e16_GeV                 19.846       20  0.775%    5.0%   10.0%     7.50%       80.5%
+mb/ms@1e16_GeV                 46.977       47  0.050%    2.1%   10.6%     6.38%       97.5%
+mmu/me@1e16_GeV               210.674      211  0.155%    2.4%    0.5%     1.42%       77.4%
+mtau/mmu@1e16_GeV              16.987       17  0.079%   17.6%   11.8%    14.71%       98.3%
+
+  up: mean residual 0.301%, mean local spacing 0.86%, mean rand-pctile 42.8%
+  down: mean residual 1.179%, mean local spacing 6.63%, mean rand-pctile 65.5%
+  lepton: mean residual 0.119%, mean local spacing 8.06%, mean rand-pctile 87.3%
+
+Reading: cand-, cand+ are the grammar candidates immediately below/above
+the best-fit candidate. rand-pctile = fraction of random ratios (in ±20%
+window of target) with worse residual than the actual fit. High values
+= real fit better than typical, low values = fit no better than density.
+
+Total runtime: 3.7s
+Done.
