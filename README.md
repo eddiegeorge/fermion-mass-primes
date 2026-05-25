@@ -63,15 +63,15 @@ Purpose:
 Tests whether fermion mass ratios are best described as a single odd prime, optionally multiplied by a power of 2. This isolates the hypothesis that ratios are either bare prime modes or substrate-dressed versions of them.
 
 Physical motivation:
-If fermion masses have the form ( m = 2^a \times (\text{mode}) ), then ratios take the form ( 2^{(a_1 - a_2)} \times p ).
+If fermion masses have the form ( m = 2^a × (mode) ), then ratios take the form ( 2^{(a_1 - a_2)} × p ).
 
 * If ( a_1 = a_2 ), the substrate cancels → pure odd prime
-* If ( a_1 \neq a_2 ), the ratio carries a residual power of 2
+* If ( a_1 ≠ a_2 ), the ratio carries a residual power of 2
 
 Grammar:
-( 2^a \times p )
+( 2^a × p )
 
-* ( a \in {0,1,2,3} )
+* ( a ∈ {0,1,2,3} )
 * ( p ) = single odd prime
 * no composite products
 * no prime powers
@@ -88,7 +88,7 @@ Method:
 
 * For each ratio at each scale:
 
-  * find best-fit ( 2^a \times p )
+  * find best-fit ( 2^a × p )
   * compute residual
 * no enumeration over prime sets; direct nearest-fit search
 
@@ -110,7 +110,7 @@ Key questions:
 **Hierarchy-matched single-prime substrate null test (multi-scale comparison)**
 
 Purpose:
-Tests whether the proximity of fermion mass ratios to single-prime substrate forms (2^a \times p) (test11) is statistically unusual, by comparing against hierarchy-matched random ratios.
+Tests whether the proximity of fermion mass ratios to single-prime substrate forms (2^a × p) (test11) is statistically unusual, by comparing against hierarchy-matched random ratios.
 
 Scope:
 
@@ -123,19 +123,19 @@ Scope:
 Null model (same generator as test07):
 
 * For each trial, generate six independent ratios:
-  (r_i \sim \mathrm{LogUniform}(8.4, 1179))
+  (r_i ~ LogUniform(8.4, 1179))
 
 Scoring (test11 metric):
 
 * For each ratio, find best-fit candidate of the form:
-  (2^a \times p)
+  (2^a × p)
   where:
 
-  * (a \in {0,1,2,3})
+  * (a ∈ {0,1,2,3})
   * (p) = single odd prime
 * Compute residual:
   [
-  \left|\frac{r_i - (2^a p)}{r_i}\right| \times 100
+  |(r_i - (2^a p) / r_i)| × 100
   ]
 * Aggregate per trial: mean residual across 6 ratios
 
@@ -147,7 +147,7 @@ Procedure:
 * For each of N trials (e.g. 1000 or 1M):
 
   * generate random six-ratio set
-  * compute mean residual using same (2^a \times p) fitting
+  * compute mean residual using same (2^a × p) fitting
 * Compare real vs random distribution
 
 Output:
@@ -163,7 +163,7 @@ Output:
 
 Key questions:
 
-* Are real fermion ratios closer to (2^a \times p) than hierarchy-matched random ratios?
+* Are real fermion ratios closer to (2^a × p) than hierarchy-matched random ratios?
 * Does the signal persist across all energy scales?
 * Do real ratios exhibit a stronger preference for low substrate powers ((a=0,2)) than random data?
 
@@ -184,7 +184,7 @@ This test directly extends test10 by replacing the nearest-prime metric with the
 Tests whether the test11 grammar,
 
 [
-R \approx 2^a \times p
+R ≈ 2^a × p
 ]
 
 describes same-generation cross-family mass ratios as well as it describes within-family ratios.
@@ -196,12 +196,12 @@ This is a boundary test, not a grammar extension.
 Identical to test11:
 
 [
-2^a \times p
+2^a × p
 ]
 
 where:
 
-* (a \in {0,1,2,3})
+* (a ∈ {0,1,2,3})
 * (p) = single odd prime
 * no composite products
 * no prime powers
@@ -220,7 +220,7 @@ so ratios below 3 are flagged as below-floor.
 Nine same-generation cross-family ratios:
 
 [
-d/u,\ c/s,\ t/b,\ u/e,\ c/\mu,\ t/\tau,\ d/e,\ \mu/s,\ b/\tau
+d/u,\ c/s,\ t/b,\ u/e,\ c/μ,\ t/τ,\ d/e,\ μ/s,\ b/τ
 ]
 
 Evaluated at 10 energy scales:
@@ -235,7 +235,7 @@ Neutrino sector excluded.
 For each cell, compute the heavier/lighter ratio:
 
 [
-R = \frac{\max(m_i,m_j)}{\min(m_i,m_j)}
+R = (max(m_i,m_j) / min(m_i,m_j))
 ]
 
 Record the orientation.
@@ -248,11 +248,11 @@ For each ratio at each scale:
 
 * compute (R)
 * flag whether (R < 3)
-* find best-fit (2^a \times p)
+* find best-fit (2^a × p)
 * compute residual:
 
 [
-\left|\frac{R - 2^a p}{R}\right| \times 100
+|(R - 2^a p / R)| × 100
 ]
 
 ##### Output
