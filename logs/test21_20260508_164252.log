@@ -1,0 +1,241 @@
+======================================================================
+TEST 21: CKM MIXING NULL
+Random prime assignment under fixed structural template
+======================================================================
+
+  Fixed constants: α_s(M_Z) = 0.118, π/2 = 1.5708
+  Real primes: [5, 17, 53, 59, 97, 127, 211, 271]
+  Derived: P = 840, p_max = 271
+  n_src: {'u': 6, 'c': 7, 't': 8, 'd': 5, 's': 6, 'b': 7}
+  Seed: 42
+  Trials per random null: 1,000,000
+
+  Observed CKM (Antusch M_Z, full PDG parameterisation):
+    |V_ud| = 0.97433
+    |V_us| = 0.22510
+    |V_ub| = 0.00370
+    |V_cd| = 0.22497
+    |V_cs| = 0.97346
+    |V_cb| = 0.04193
+    |V_td| = 0.00858
+    |V_ts| = 0.04121
+    |V_tb| = 0.99911
+
+  Real model results:
+    Primary score S = 0.031387
+    Secondary score S_max = 0.071389
+    Inversions: 1
+    Row ordering correct: True
+    Column unitarity U_col: 0.0110
+
+  Real model vs observed:
+  Element     Predicted   Observed     %err
+  ────────── ────────── ────────── ────────
+  |V_ud|        0.97778    0.97433    +0.4%
+  |V_us|        0.20959    0.22510    -6.9%
+  |V_ub|        0.00379    0.00370    +2.4%
+  |V_cd|        0.23431    0.22497    +4.2%
+  |V_cs|        0.97126    0.97346    -0.2%
+  |V_cb|        0.04177    0.04193    -0.4%
+  |V_td|        0.00839    0.00858    -2.1%
+  |V_ts|        0.04112    0.04121    -0.2%
+  |V_tb|        0.99912    0.99911    +0.0%
+
+======================================================================
+NULL POPULATION 1: PERMUTATION (exact enumeration)
+Same 8 primes, all 8! = 40,320 slot permutations
+======================================================================
+
+  Real score S = 0.031387
+  Real assignment rank: 1 of 40320
+  Match-or-exceed (S): 6/40320 = 0.000149 [STRONG]
+  Joint diagnostic: 6/40320 = 0.000149
+
+  Score distribution:
+    Mean:   1813.920
+    Median: 1062.779
+    Min:    0.031387
+    P1:     8.687
+    P5:     68.752
+    P25:    310.454
+
+  Secondary score S_max distribution:
+    Real S_max: 0.071389
+    Mean:   11.209
+    Median: 10.112
+    S_max <= real: 6/40320
+
+  Inversion count distribution:
+    Zero inversions: 36/40320 (0.09%)
+    Mean inversions: 9.0
+    Row-order correct: 4902/40320 (12.16%)
+
+  Column unitarity U_col distribution:
+    Real U_col: 0.0110
+    Mean: 0.9692
+    Median: 1.0000
+    U_col <= real: 1758/40320
+
+  Best permutation: [5, 17, 53, 59, 97, 127, 211, 271]
+  Best score: 0.031387
+
+  Best perm vs real model vs observed:
+  Element     Best perm       Real   Observed
+  ────────── ────────── ────────── ──────────
+  |V_ud|        0.97778    0.97778    0.97433
+  |V_us|        0.20959    0.20959    0.22510
+  |V_ub|        0.00379    0.00379    0.00370
+  |V_cd|        0.23431    0.23431    0.22497
+  |V_cs|        0.97126    0.97126    0.97346
+  |V_cb|        0.04177    0.04177    0.04193
+  |V_td|        0.00839    0.00839    0.00858
+  |V_ts|        0.04112    0.04112    0.04121
+  |V_tb|        0.99912    0.99912    0.99911
+
+  Range-matched prime pool: 57 odd primes in [3, 271]
+
+======================================================================
+NULL POPULATION: RANGE-MATCHED [3, 271]
+8 distinct primes from pool of 57 odd primes, 1,000,000 trials
+======================================================================
+    ... 100,000/1,000,000 (15s elapsed, ~132s remaining)
+    ... 200,000/1,000,000 (29s elapsed, ~114s remaining)
+    ... 300,000/1,000,000 (40s elapsed, ~94s remaining)
+    ... 400,000/1,000,000 (52s elapsed, ~78s remaining)
+    ... 500,000/1,000,000 (64s elapsed, ~64s remaining)
+    ... 600,000/1,000,000 (76s elapsed, ~51s remaining)
+    ... 700,000/1,000,000 (89s elapsed, ~38s remaining)
+    ... 800,000/1,000,000 (101s elapsed, ~25s remaining)
+    ... 900,000/1,000,000 (113s elapsed, ~13s remaining)
+    ... 1,000,000/1,000,000 (125s elapsed, ~0s remaining)
+
+  Completed in 124.8s
+
+  Real score S = 0.031387
+  Match-or-exceed (S): 0/1,000,000 = < 1.0e-06 [STRONG]
+  Joint diagnostic: 0/1,000,000 = < 1.0e-06
+
+  Score distribution:
+    Mean:   2332.683
+    Median: 1766.582
+    Min:    0.062039
+    P1:     31.465
+    P5:     101.355
+    P25:    675.948
+
+  Secondary score S_max distribution:
+    Real S_max: 0.071389
+    Mean:   13.440
+    Median: 13.283
+    S_max <= real: 0/1,000,000
+
+  Inversion count distribution:
+    Zero inversions: 717/1,000,000 (0.0717%)
+    Mean inversions: 9.5
+    Row-order correct: 104851/1,000,000 (10.4851%)
+
+  Column unitarity U_col distribution:
+    Real U_col: 0.0110
+    Mean: 0.9979
+    Median: 1.0000
+    U_col <= real: 84029/1,000,000
+
+  Best random primes: [5, 223, 53, 59, 157, 139, 7, 229]
+  Best score: 0.062039
+
+  Best rand vs real model vs observed:
+  Element     Best rand       Real   Observed
+  ────────── ────────── ────────── ──────────
+  |V_ud|        0.97575    0.97778    0.97433
+  |V_us|        0.21883    0.20959    0.22510
+  |V_ub|        0.00406    0.00379    0.00370
+  |V_cd|        0.24248    0.23431    0.22497
+  |V_cs|        0.96926    0.97126    0.97346
+  |V_cb|        0.04167    0.04177    0.04193
+  |V_td|        0.00841    0.00839    0.00858
+  |V_ts|        0.04114    0.04112    0.04121
+  |V_tb|        0.99912    0.99912    0.99911
+
+  Extended prime pool: 167 odd primes in [3, 997]
+
+======================================================================
+NULL POPULATION: EXTENDED [3, 997]
+8 distinct primes from pool of 167 odd primes, 1,000,000 trials
+======================================================================
+    ... 100,000/1,000,000 (13s elapsed, ~113s remaining)
+    ... 200,000/1,000,000 (26s elapsed, ~102s remaining)
+    ... 300,000/1,000,000 (40s elapsed, ~94s remaining)
+    ... 400,000/1,000,000 (53s elapsed, ~80s remaining)
+    ... 500,000/1,000,000 (67s elapsed, ~67s remaining)
+    ... 600,000/1,000,000 (80s elapsed, ~54s remaining)
+    ... 700,000/1,000,000 (93s elapsed, ~40s remaining)
+    ... 800,000/1,000,000 (106s elapsed, ~27s remaining)
+    ... 900,000/1,000,000 (119s elapsed, ~13s remaining)
+    ... 1,000,000/1,000,000 (132s elapsed, ~0s remaining)
+
+  Completed in 132.4s
+
+  Real score S = 0.031387
+  Match-or-exceed (S): 0/1,000,000 = < 1.0e-06 [STRONG]
+  Joint diagnostic: 0/1,000,000 = < 1.0e-06
+
+  Score distribution:
+    Mean:   37404.417
+    Median: 29710.410
+    Min:    0.546240
+    P1:     233.241
+    P5:     2004.184
+    P25:    12954.514
+
+  Secondary score S_max distribution:
+    Real S_max: 0.071389
+    Mean:   53.473
+    Median: 53.039
+    S_max <= real: 0/1,000,000
+
+  Inversion count distribution:
+    Zero inversions: 349/1,000,000 (0.0349%)
+    Mean inversions: 10.5
+    Row-order correct: 88903/1,000,000 (8.8903%)
+
+  Column unitarity U_col distribution:
+    Real U_col: 0.0110
+    Mean: 1.0684
+    Median: 1.0000
+    U_col <= real: 121566/1,000,000
+
+  Best random primes: [7, 139, 53, 67, 109, 719, 37, 787]
+  Best score: 0.546240
+
+  Best rand vs real model vs observed:
+  Element     Best rand       Real   Observed
+  ────────── ────────── ────────── ──────────
+  |V_ud|        0.97979    0.97778    0.97433
+  |V_us|        0.19997    0.20959    0.22510
+  |V_ub|        0.00495    0.00379    0.00370
+  |V_cd|        0.25487    0.23431    0.22497
+  |V_cs|        0.96587    0.97126    0.97346
+  |V_cb|        0.04629    0.04177    0.04193
+  |V_td|        0.00766    0.00839    0.00858
+  |V_ts|        0.04130    0.04112    0.04121
+  |V_tb|        0.99912    0.99912    0.99911
+
+======================================================================
+SUMMARY
+======================================================================
+
+  Real model score: S = 0.031387
+
+  Population                            Match frac     Band
+  ─────────────────────────────────── ──────────── ────────
+  Permutation (same primes)               0.000149   STRONG
+  Range-matched [3,271]                  < 1.0e-06   STRONG
+  Extended [3,997]                       < 1.0e-06   STRONG
+
+  Interpretation:
+  The CKM result depends on both the specific prime values
+  AND their slot placement.
+
+  VERDICT: The chain-derived prime values and their slot
+  placement carry structural information about quark mixing
+  that random assignments do not replicate.

@@ -1,0 +1,606 @@
+====================================================================================================
+FERMION MASS PRIMES TEST 16
+Multi-scale chain composition (accounting check)
+====================================================================================================
+Diagnostic check: composed residuals must equal residuals implied
+by signed component errors, to numerical tolerance.
+
+A successful diagnostic confirms only that chosen edge fits propagate
+correctly along the tree. It is not evidence for modal equivalence.
+
+Chains tested:
+  lepton (m_t/m_e): t/tau x tau/mu x mu/e
+  down (m_t/m_d): t/b x b/s x s/d
+  up (m_t/m_u): t/c x c/u
+
+Scales: 9 common scales (PDG excluded by design)
+Identity tolerance: 1e-09
+Candidates generated: 346 (2^a x p up to 1015)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: M_Z
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  CHAIN: lepton (m_t/m_e)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    edge       source          R_obs   val_fit form         signed_res
+    ────────── ──────── ──────────── ───────── ────────── ────────────
+    t/tau      t14           97.3052        97 97             -0.3137%
+    tau/mu     t11           16.9865        17 17             +0.0796%
+    mu/e       t11          210.6642       211 211            +0.1594%
+
+    Product of fitted values (predicted): 3.479390e+05
+    Product of observed values:           3.482012e+05
+    Product of (1 + delta_i):             0.999247
+
+    Composed signed residual (direct):    -0.0753%
+    Composed signed residual (implied):   -0.0753%
+    Identity check (direct - implied):    +7.26e-17
+    Diagnostic:                           OK
+    Endpoint check (chain vs direct):     +1.67e-16  OK
+    Cancellation pattern:                 uniformly small
+
+  CHAIN: down (m_t/m_d)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    edge       source          R_obs   val_fit form         signed_res
+    ────────── ──────── ──────────── ───────── ────────── ────────────
+    t/b        t14           59.3252        59 59             -0.5481%
+    b/s        t11           53.2680        53 53             -0.5031%
+    s/d        t11           19.8701        20 2²×5           +0.6536%
+
+    Product of fitted values (predicted): 6.254000e+04
+    Product of observed values:           6.279221e+04
+    Product of (1 + delta_i):             0.995983
+
+    Composed signed residual (direct):    -0.4017%
+    Composed signed residual (implied):   -0.4017%
+    Identity check (direct - implied):    +1.44e-16
+    Diagnostic:                           OK
+    Endpoint check (chain vs direct):     +0.00e+00  OK
+    Cancellation pattern:                 uniformly small
+
+  CHAIN: up (m_t/m_u)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    edge       source          R_obs   val_fit form         signed_res
+    ────────── ──────── ──────────── ───────── ────────── ────────────
+    t/c        t11          271.6292       271 271            -0.2316%
+    c/u        t11          505.6818       508 2²×127         +0.4584%
+
+    Product of fitted values (predicted): 1.376680e+05
+    Product of observed values:           1.373580e+05
+    Product of (1 + delta_i):             1.002257
+
+    Composed signed residual (direct):    +0.2257%
+    Composed signed residual (implied):   +0.2257%
+    Identity check (direct - implied):    +1.68e-16
+    Diagnostic:                           OK
+    Endpoint check (chain vs direct):     +0.00e+00  OK
+    Cancellation pattern:                 uniformly small
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: 1_TeV
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  CHAIN: lepton (m_t/m_e)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    edge       source          R_obs   val_fit form         signed_res
+    ────────── ──────── ──────────── ───────── ────────── ────────────
+    t/tau      t14           85.2985        86 2×43           +0.8224%
+    tau/mu     t11           16.9865        17 17             +0.0797%
+    mu/e       t11          210.6671       211 211            +0.1580%
+
+    Product of fitted values (predicted): 3.084820e+05
+    Product of observed values:           3.052397e+05
+    Product of (1 + delta_i):             1.010622
+
+    Composed signed residual (direct):    +1.0622%
+    Composed signed residual (implied):   +1.0622%
+    Identity check (direct - implied):    +6.77e-17
+    Diagnostic:                           OK
+    Endpoint check (chain vs direct):     +0.00e+00  OK
+    Cancellation pattern:                 uniformly small
+
+  CHAIN: down (m_t/m_d)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    edge       source          R_obs   val_fit form         signed_res
+    ────────── ──────── ──────────── ───────── ────────── ────────────
+    t/b        t14           61.4989        61 61             -0.8113%
+    b/s        t11           52.2761        52 2²×13          -0.5282%
+    s/d        t11           19.8519        20 2²×5           +0.7463%
+
+    Product of fitted values (predicted): 6.344000e+04
+    Product of observed values:           6.382222e+04
+    Product of (1 + delta_i):             0.994011
+
+    Composed signed residual (direct):    -0.5989%
+    Composed signed residual (implied):   -0.5989%
+    Identity check (direct - implied):    -1.11e-16
+    Diagnostic:                           OK
+    Endpoint check (chain vs direct):     +1.14e-16  OK
+    Cancellation pattern:                 uniformly small
+
+  CHAIN: up (m_t/m_u)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    edge       source          R_obs   val_fit form         signed_res
+    ────────── ──────── ──────────── ───────── ────────── ────────────
+    t/c        t11          277.0418       277 277            -0.0151%
+    c/u        t11          505.6911       508 2²×127         +0.4566%
+
+    Product of fitted values (predicted): 1.407160e+05
+    Product of observed values:           1.400976e+05
+    Product of (1 + delta_i):             1.004414
+
+    Composed signed residual (direct):    +0.4414%
+    Composed signed residual (implied):   +0.4414%
+    Identity check (direct - implied):    +1.09e-16
+    Diagnostic:                           OK
+    Endpoint check (chain vs direct):     +0.00e+00  OK
+    Cancellation pattern:                 uniformly small
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: 3_TeV
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  CHAIN: lepton (m_t/m_e)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    edge       source          R_obs   val_fit form         signed_res
+    ────────── ──────── ──────────── ───────── ────────── ────────────
+    t/tau      t14           81.0981        82 2×41           +1.1121%
+    tau/mu     t11           16.9856        17 17             +0.0847%
+    mu/e       t11          210.6647       211 211            +0.1591%
+
+    Product of fitted values (predicted): 2.941340e+05
+    Product of observed values:           2.901908e+05
+    Product of (1 + delta_i):             1.013588
+
+    Composed signed residual (direct):    +1.3588%
+    Composed signed residual (implied):   +1.3588%
+    Identity check (direct - implied):    +4.51e-17
+    Diagnostic:                           OK
+    Endpoint check (chain vs direct):     +0.00e+00  OK
+    Cancellation pattern:                 reinforcing
+
+  CHAIN: down (m_t/m_d)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    edge       source          R_obs   val_fit form         signed_res
+    ────────── ──────── ──────────── ───────── ────────── ────────────
+    t/b        t14           62.3921        62 2×31           -0.6285%
+    b/s        t11           52.0079        52 2²×13          -0.0151%
+    s/d        t11           19.8438        20 2²×5           +0.7874%
+
+    Product of fitted values (predicted): 6.448000e+04
+    Product of observed values:           6.439063e+04
+    Product of (1 + delta_i):             1.001388
+
+    Composed signed residual (direct):    +0.1388%
+    Composed signed residual (implied):   +0.1388%
+    Identity check (direct - implied):    +6.42e-17
+    Diagnostic:                           OK
+    Endpoint check (chain vs direct):     +0.00e+00  OK
+    Cancellation pattern:                 uniformly small
+
+  CHAIN: up (m_t/m_u)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    edge       source          R_obs   val_fit form         signed_res
+    ────────── ──────── ──────────── ───────── ────────── ────────────
+    t/c        t11          279.3898       278 2×139          -0.4975%
+    c/u        t11          505.1370       503 503            -0.4231%
+
+    Product of fitted values (predicted): 1.398340e+05
+    Product of observed values:           1.411301e+05
+    Product of (1 + delta_i):             0.990816
+
+    Composed signed residual (direct):    -0.9184%
+    Composed signed residual (implied):   -0.9184%
+    Identity check (direct - implied):    -1.91e-17
+    Diagnostic:                           OK
+    Endpoint check (chain vs direct):     +0.00e+00  OK
+    Cancellation pattern:                 uniformly small
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: 10_TeV
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  CHAIN: lepton (m_t/m_e)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    edge       source          R_obs   val_fit form         signed_res
+    ────────── ──────── ──────────── ───────── ────────── ────────────
+    t/tau      t14           77.2852        76 2²×19          -1.6629%
+    tau/mu     t11           16.9871        17 17             +0.0759%
+    mu/e       t11          210.6626       211 211            +0.1601%
+
+    Product of fitted values (predicted): 2.726120e+05
+    Product of observed values:           2.765689e+05
+    Product of (1 + delta_i):             0.985693
+
+    Composed signed residual (direct):    -1.4307%
+    Composed signed residual (implied):   -1.4307%
+    Identity check (direct - implied):    -1.39e-17
+    Diagnostic:                           OK
+    Endpoint check (chain vs direct):     +0.00e+00  OK
+    Cancellation pattern:                 cancelling
+
+  CHAIN: down (m_t/m_d)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    edge       source          R_obs   val_fit form         signed_res
+    ────────── ──────── ──────────── ───────── ────────── ────────────
+    t/b        t14           63.2424        62 2×31           -1.9645%
+    b/s        t11           51.4876        52 2²×13          +0.9952%
+    s/d        t11           19.8361        20 2²×5           +0.8264%
+
+    Product of fitted values (predicted): 6.448000e+04
+    Product of observed values:           6.459016e+04
+    Product of (1 + delta_i):             0.998294
+
+    Composed signed residual (direct):    -0.1706%
+    Composed signed residual (implied):   -0.1706%
+    Identity check (direct - implied):    +2.65e-16
+    Diagnostic:                           OK
+    Endpoint check (chain vs direct):     +0.00e+00  OK
+    Cancellation pattern:                 cancelling
+
+  CHAIN: up (m_t/m_u)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    edge       source          R_obs   val_fit form         signed_res
+    ────────── ──────── ──────────── ───────── ────────── ────────────
+    t/c        t11          281.4286       281 281            -0.1523%
+    c/u        t11          505.4152       503 503            -0.4779%
+
+    Product of fitted values (predicted): 1.413430e+05
+    Product of observed values:           1.422383e+05
+    Product of (1 + delta_i):             0.993706
+
+    Composed signed residual (direct):    -0.6294%
+    Composed signed residual (implied):   -0.6294%
+    Identity check (direct - implied):    +7.72e-17
+    Diagnostic:                           OK
+    Endpoint check (chain vs direct):     +0.00e+00  OK
+    Cancellation pattern:                 uniformly small
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: 100_TeV
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  CHAIN: lepton (m_t/m_e)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    edge       source          R_obs   val_fit form         signed_res
+    ────────── ──────── ──────────── ───────── ────────── ────────────
+    t/tau      t14           71.3212        71 71             -0.4504%
+    tau/mu     t11           16.9874        17 17             +0.0741%
+    mu/e       t11          210.6610       211 211            +0.1609%
+
+    Product of fitted values (predicted): 2.546770e+05
+    Product of observed values:           2.552292e+05
+    Product of (1 + delta_i):             0.997836
+
+    Composed signed residual (direct):    -0.2164%
+    Composed signed residual (implied):   -0.2164%
+    Identity check (direct - implied):    -8.11e-17
+    Diagnostic:                           OK
+    Endpoint check (chain vs direct):     +0.00e+00  OK
+    Cancellation pattern:                 uniformly small
+
+  CHAIN: down (m_t/m_d)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    edge       source          R_obs   val_fit form         signed_res
+    ────────── ──────── ──────────── ───────── ────────── ────────────
+    t/b        t14           64.6814        67 67             +3.5846%
+    b/s        t11           50.9009        52 2²×13          +2.1593%
+    s/d        t11           19.8214        20 2²×5           +0.9009%
+
+    Product of fitted values (predicted): 6.968000e+04
+    Product of observed values:           6.525893e+04
+    Product of (1 + delta_i):             1.067747
+
+    Composed signed residual (direct):    +6.7747%
+    Composed signed residual (implied):   +6.7747%
+    Identity check (direct - implied):    -6.94e-17
+    Diagnostic:                           OK
+    Endpoint check (chain vs direct):     +1.11e-16  OK
+    Cancellation pattern:                 reinforcing
+
+  CHAIN: up (m_t/m_u)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    edge       source          R_obs   val_fit form         signed_res
+    ────────── ──────── ──────────── ───────── ────────── ────────────
+    t/c        t11          284.3969       284 2²×71          -0.1396%
+    c/u        t11          506.9034       508 2²×127         +0.2163%
+
+    Product of fitted values (predicted): 1.442720e+05
+    Product of observed values:           1.441617e+05
+    Product of (1 + delta_i):             1.000765
+
+    Composed signed residual (direct):    +0.0765%
+    Composed signed residual (implied):   +0.0765%
+    Identity check (direct - implied):    +1.62e-16
+    Diagnostic:                           OK
+    Endpoint check (chain vs direct):     -2.02e-16  OK
+    Cancellation pattern:                 uniformly small
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: 1e7_GeV
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  CHAIN: lepton (m_t/m_e)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    edge       source          R_obs   val_fit form         signed_res
+    ────────── ──────── ──────────── ───────── ────────── ────────────
+    t/tau      t14           62.9579        62 2×31           -1.5215%
+    tau/mu     t11           16.9875        17 17             +0.0738%
+    mu/e       t11          210.6656       211 211            +0.1587%
+
+    Product of fitted values (predicted): 2.223940e+05
+    Product of observed values:           2.253060e+05
+    Product of (1 + delta_i):             0.987076
+
+    Composed signed residual (direct):    -1.2924%
+    Composed signed residual (implied):   -1.2924%
+    Identity check (direct - implied):    +0.00e+00
+    Diagnostic:                           OK
+    Endpoint check (chain vs direct):     +0.00e+00  OK
+    Cancellation pattern:                 cancelling
+
+  CHAIN: down (m_t/m_d)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    edge       source          R_obs   val_fit form         signed_res
+    ────────── ──────── ──────────── ───────── ────────── ────────────
+    t/b        t14           67.2425        67 67             -0.3606%
+    b/s        t11           49.7927        52 2²×13          +4.4329%
+    s/d        t11           19.8969        20 2²×5           +0.5181%
+
+    Product of fitted values (predicted): 6.968000e+04
+    Product of observed values:           6.661856e+04
+    Product of (1 + delta_i):             1.045955
+
+    Composed signed residual (direct):    +4.5955%
+    Composed signed residual (implied):   +4.5955%
+    Identity check (direct - implied):    +1.25e-16
+    Diagnostic:                           OK
+    Endpoint check (chain vs direct):     +0.00e+00  OK
+    Cancellation pattern:                 cancelling
+
+  CHAIN: up (m_t/m_u)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    edge       source          R_obs   val_fit form         signed_res
+    ────────── ──────── ──────────── ───────── ────────── ────────────
+    t/c        t11          291.0811       292 2²×73          +0.3157%
+    c/u        t11          505.6948       508 2²×127         +0.4559%
+
+    Product of fitted values (predicted): 1.483360e+05
+    Product of observed values:           1.471982e+05
+    Product of (1 + delta_i):             1.007730
+
+    Composed signed residual (direct):    +0.7730%
+    Composed signed residual (implied):   +0.7730%
+    Identity check (direct - implied):    -1.05e-16
+    Diagnostic:                           OK
+    Endpoint check (chain vs direct):     +0.00e+00  OK
+    Cancellation pattern:                 uniformly small
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: 1e9_GeV
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  CHAIN: lepton (m_t/m_e)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    edge       source          R_obs   val_fit form         signed_res
+    ────────── ──────── ──────────── ───────── ────────── ────────────
+    t/tau      t14           57.2297        58 2×29           +1.3460%
+    tau/mu     t11           16.9858        17 17             +0.0835%
+    mu/e       t11          210.6637       211 211            +0.1597%
+
+    Product of fitted values (predicted): 2.080460e+05
+    Product of observed values:           2.047846e+05
+    Product of (1 + delta_i):             1.015926
+
+    Composed signed residual (direct):    +1.5926%
+    Composed signed residual (implied):   +1.5926%
+    Identity check (direct - implied):    -1.67e-16
+    Diagnostic:                           OK
+    Endpoint check (chain vs direct):     +1.42e-16  OK
+    Cancellation pattern:                 reinforcing
+
+  CHAIN: down (m_t/m_d)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    edge       source          R_obs   val_fit form         signed_res
+    ────────── ──────── ──────────── ───────── ────────── ────────────
+    t/b        t14           69.1706        68 2²×17          -1.6924%
+    b/s        t11           49.0698        47 47             -4.2180%
+    s/d        t11           19.7701        20 2²×5           +1.1628%
+
+    Product of fitted values (predicted): 6.392000e+04
+    Product of observed values:           6.710345e+04
+    Product of (1 + delta_i):             0.952559
+
+    Composed signed residual (direct):    -4.7441%
+    Composed signed residual (implied):   -4.7441%
+    Identity check (direct - implied):    -1.53e-16
+    Diagnostic:                           OK
+    Endpoint check (chain vs direct):     +0.00e+00  OK
+    Cancellation pattern:                 cancelling
+
+  CHAIN: up (m_t/m_u)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    edge       source          R_obs   val_fit form         signed_res
+    ────────── ──────── ──────────── ───────── ────────── ────────────
+    t/c        t11          294.8485       296 2³×37          +0.3905%
+    c/u        t11          507.6923       508 2²×127         +0.0606%
+
+    Product of fitted values (predicted): 1.503680e+05
+    Product of observed values:           1.496923e+05
+    Product of (1 + delta_i):             1.004514
+
+    Composed signed residual (direct):    +0.4514%
+    Composed signed residual (implied):   +0.4514%
+    Identity check (direct - implied):    -2.86e-17
+    Diagnostic:                           OK
+    Endpoint check (chain vs direct):     -1.94e-16  OK
+    Cancellation pattern:                 uniformly small
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: 1e12_GeV
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  CHAIN: lepton (m_t/m_e)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    edge       source          R_obs   val_fit form         signed_res
+    ────────── ──────── ──────────── ───────── ────────── ────────────
+    t/tau      t14           51.3184        52 2²×13          +1.3281%
+    tau/mu     t11           16.9871        17 17             +0.0762%
+    mu/e       t11          210.6619       211 211            +0.1605%
+
+    Product of fitted values (predicted): 1.865240e+05
+    Product of observed values:           1.836443e+05
+    Product of (1 + delta_i):             1.015681
+
+    Composed signed residual (direct):    +1.5681%
+    Composed signed residual (implied):   +1.5681%
+    Identity check (direct - implied):    +6.94e-18
+    Diagnostic:                           OK
+    Endpoint check (chain vs direct):     +1.58e-16  OK
+    Cancellation pattern:                 reinforcing
+
+  CHAIN: down (m_t/m_d)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    edge       source          R_obs   val_fit form         signed_res
+    ────────── ──────── ──────────── ───────── ────────── ────────────
+    t/b        t14           71.4604        71 71             -0.6442%
+    b/s        t11           47.9333        47 47             -1.9471%
+    s/d        t11           20.0000        20 2²×5           +0.0000%
+
+    Product of fitted values (predicted): 6.674000e+04
+    Product of observed values:           6.850667e+04
+    Product of (1 + delta_i):             0.974212
+
+    Composed signed residual (direct):    -2.5788%
+    Composed signed residual (implied):   -2.5788%
+    Identity check (direct - implied):    +1.39e-17
+    Diagnostic:                           OK
+    Endpoint check (chain vs direct):     -2.12e-16  OK
+    Cancellation pattern:                 cancelling
+
+  CHAIN: up (m_t/m_u)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    edge       source          R_obs   val_fit form         signed_res
+    ────────── ──────── ──────────── ───────── ────────── ────────────
+    t/c        t11          300.4678       302 2×151          +0.5099%
+    c/u        t11          507.4184       508 2²×127         +0.1146%
+
+    Product of fitted values (predicted): 1.534160e+05
+    Product of observed values:           1.524629e+05
+    Product of (1 + delta_i):             1.006251
+
+    Composed signed residual (direct):    +0.6251%
+    Composed signed residual (implied):   +0.6251%
+    Identity check (direct - implied):    -2.08e-17
+    Diagnostic:                           OK
+    Endpoint check (chain vs direct):     +0.00e+00  OK
+    Cancellation pattern:                 uniformly small
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: 1e16_GeV
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  CHAIN: lepton (m_t/m_e)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    edge       source          R_obs   val_fit form         signed_res
+    ────────── ──────── ──────────── ───────── ────────── ────────────
+    t/tau      t14           46.2081        46 2×23           -0.4504%
+    tau/mu     t11           16.9865        17 17             +0.0794%
+    mu/e       t11          210.6738       211 211            +0.1548%
+
+    Product of fitted values (predicted): 1.650020e+05
+    Product of observed values:           1.653611e+05
+    Product of (1 + delta_i):             0.997829
+
+    Composed signed residual (direct):    -0.2171%
+    Composed signed residual (implied):   -0.2171%
+    Identity check (direct - implied):    +1.11e-16
+    Diagnostic:                           OK
+    Endpoint check (chain vs direct):     +0.00e+00  OK
+    Cancellation pattern:                 uniformly small
+
+  CHAIN: down (m_t/m_d)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    edge       source          R_obs   val_fit form         signed_res
+    ────────── ──────── ──────────── ───────── ────────── ────────────
+    t/b        t14           73.4983        73 73             -0.6780%
+    b/s        t11           46.9767        47 47             +0.0495%
+    s/d        t11           19.8462        20 2²×5           +0.7752%
+
+    Product of fitted values (predicted): 6.862000e+04
+    Product of observed values:           6.852308e+04
+    Product of (1 + delta_i):             1.001414
+
+    Composed signed residual (direct):    +0.1414%
+    Composed signed residual (implied):   +0.1414%
+    Identity check (direct - implied):    +1.05e-16
+    Diagnostic:                           OK
+    Endpoint check (chain vs direct):     +0.00e+00  OK
+    Cancellation pattern:                 uniformly small
+
+  CHAIN: up (m_t/m_u)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    edge       source          R_obs   val_fit form         signed_res
+    ────────── ──────── ──────────── ───────── ────────── ────────────
+    t/c        t11          307.1724       307 307            -0.0561%
+    c/u        t11          505.2265       503 503            -0.4407%
+
+    Product of fitted values (predicted): 1.544210e+05
+    Product of observed values:           1.551916e+05
+    Product of (1 + delta_i):             0.995034
+
+    Composed signed residual (direct):    -0.4966%
+    Composed signed residual (implied):   -0.4966%
+    Identity check (direct - implied):    -2.09e-16
+    Diagnostic:                           OK
+    Endpoint check (chain vs direct):     +0.00e+00  OK
+    Cancellation pattern:                 uniformly small
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+GRAND SUMMARY — COMPOSED RESIDUAL PER CHAIN PER SCALE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Scale              lepton (m_t/m_e)         down (m_t/m_d)           up (m_t/m_u)    all OK?
+──────────── ────────────────────── ────────────────────── ────────────────────── ──────────
+M_Z                        -0.0753%               -0.4017%               +0.2257%        yes
+1_TeV                      +1.0622%               -0.5989%               +0.4414%        yes
+3_TeV                      +1.3588%               +0.1388%               -0.9184%        yes
+10_TeV                     -1.4307%               -0.1706%               -0.6294%        yes
+100_TeV                    -0.2164%               +6.7747%               +0.0765%        yes
+1e7_GeV                    -1.2924%               +4.5955%               +0.7730%        yes
+1e9_GeV                    +1.5926%               -4.7441%               +0.4514%        yes
+1e12_GeV                   +1.5681%               -2.5788%               +0.6251%        yes
+1e16_GeV                   -0.2171%               +0.1414%               -0.4966%        yes
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CANCELLATION PATTERN — PER CHAIN PER SCALE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Scale              lepton (m_t/m_e)         down (m_t/m_d)           up (m_t/m_u)
+──────────── ────────────────────── ────────────────────── ──────────────────────
+M_Z                 uniformly small        uniformly small        uniformly small
+1_TeV               uniformly small        uniformly small        uniformly small
+3_TeV                   reinforcing        uniformly small        uniformly small
+10_TeV                   cancelling             cancelling        uniformly small
+100_TeV             uniformly small            reinforcing        uniformly small
+1e7_GeV                  cancelling             cancelling        uniformly small
+1e9_GeV                 reinforcing             cancelling        uniformly small
+1e12_GeV                reinforcing             cancelling        uniformly small
+1e16_GeV            uniformly small        uniformly small        uniformly small
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+IDENTITY CHECK SUMMARY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Tolerance: 1e-09
+
+  Identity check (direct = implied):  27/27  max |residual| = 2.65e-16
+  Endpoint check (chain = direct):    27/27  max |residual| = 2.12e-16
+
+  All diagnostics OK: chosen edge fits propagate correctly
+  along the tree. This is a precondition for test19; it is not
+  evidence for modal equivalence.
+
+Total runtime: 0.0s
+Done.

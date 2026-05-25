@@ -1,0 +1,502 @@
+====================================================================================================
+FERMION MASS PRIMES TEST 17
+Bridge substitution null (local enumeration)
+====================================================================================================
+Local null check: is the test14-selected bridge unusually well-aligned
+with B_required among grammar candidates of similar magnitude?
+
+Reading rules (pre-committed):
+  Strong:  percentile <= 5
+  Modest:  5  < percentile <= 25
+  Weak:    25 < percentile <= 50
+  None:    percentile >  50
+
+Chains tested:
+  lepton (m_t/m_e): bridge t/tau x tau/mu x mu/e
+  down (m_t/m_d): bridge t/b x b/s x s/d
+
+Scales: 9 common scales (PDG excluded by design)
+Window factor: 2.0 (pool = candidates in [B_obs/2.0, 2.0 * B_obs])
+Candidates generated: 346 (2^a x p up to 1015)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: M_Z
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  CHAIN: lepton (m_t/m_e)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Within-family fits held fixed:
+      tau/mu   R_obs=     16.9865  fit=17    17
+      mu/e     R_obs=    210.6642  fit=211   211
+    Within-family product: 3.587000e+03
+
+    Endpoint observed (m_t/m_X): 3.482012e+05
+    B_obs       (observed bridge ratio):  97.305239
+    B_required  (chain-target bridge):    97.073097
+    B_obs - B_required: +0.232141 (+0.2391%)
+
+    B_fit (test14 selection): 97 = 97
+      residual against endpoint: 0.0753%
+    Pool size: 61 (window = [48.65, 194.61])
+    Best candidate in pool: 97 = 97
+      residual against endpoint: 0.0753%
+
+    B_fit rank:        1.0 of 61
+    B_fit percentile:  0.00
+    Evidence band:     strong
+
+  CHAIN: down (m_t/m_d)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Within-family fits held fixed:
+      b/s      R_obs=     53.2680  fit=53    53
+      s/d      R_obs=     19.8701  fit=20    2^2x5
+    Within-family product: 1.060000e+03
+
+    Endpoint observed (m_t/m_X): 6.279221e+04
+    B_obs       (observed bridge ratio):  59.325153
+    B_required  (chain-target bridge):    59.237932
+    B_obs - B_required: +0.087221 (+0.1472%)
+
+    B_fit (test14 selection): 59 = 59
+      residual against endpoint: 0.4017%
+    Pool size: 41 (window = [29.66, 118.65])
+    Best candidate in pool: 59 = 59
+      residual against endpoint: 0.4017%
+
+    B_fit rank:        1.0 of 41
+    B_fit percentile:  0.00
+    Evidence band:     strong
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: 1_TeV
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  CHAIN: lepton (m_t/m_e)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Within-family fits held fixed:
+      tau/mu   R_obs=     16.9865  fit=17    17
+      mu/e     R_obs=    210.6671  fit=211   211
+    Within-family product: 3.587000e+03
+
+    Endpoint observed (m_t/m_X): 3.052397e+05
+    B_obs       (observed bridge ratio):  85.298485
+    B_required  (chain-target bridge):    85.096087
+    B_obs - B_required: +0.202398 (+0.2378%)
+
+    B_fit (test14 selection): 86 = 2x43
+      residual against endpoint: 1.0622%
+    Pool size: 55 (window = [42.65, 170.60])
+    Best candidate in pool: 86 = 2x43
+      residual against endpoint: 1.0622%
+
+    B_fit rank:        1.0 of 55
+    B_fit percentile:  0.00
+    Evidence band:     strong
+
+  CHAIN: down (m_t/m_d)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Within-family fits held fixed:
+      b/s      R_obs=     52.2761  fit=52    2^2x13
+      s/d      R_obs=     19.8519  fit=20    2^2x5
+    Within-family product: 1.040000e+03
+
+    Endpoint observed (m_t/m_X): 6.382222e+04
+    B_obs       (observed bridge ratio):  61.498929
+    B_required  (chain-target bridge):    61.367521
+    B_obs - B_required: +0.131408 (+0.2141%)
+
+    B_fit (test14 selection): 61 = 61
+      residual against endpoint: 0.5989%
+    Pool size: 42 (window = [30.75, 123.00])
+    Best candidate in pool: 61 = 61
+      residual against endpoint: 0.5989%
+
+    B_fit rank:        1.0 of 42
+    B_fit percentile:  0.00
+    Evidence band:     strong
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: 3_TeV
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  CHAIN: lepton (m_t/m_e)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Within-family fits held fixed:
+      tau/mu   R_obs=     16.9856  fit=17    17
+      mu/e     R_obs=    210.6647  fit=211   211
+    Within-family product: 3.587000e+03
+
+    Endpoint observed (m_t/m_X): 2.901908e+05
+    B_obs       (observed bridge ratio):  81.098101
+    B_required  (chain-target bridge):    80.900706
+    B_obs - B_required: +0.197395 (+0.2440%)
+
+    B_fit (test14 selection): 82 = 2x41
+      residual against endpoint: 1.3588%
+    Pool size: 52 (window = [40.55, 162.20])
+    Best candidate in pool: 82 = 2x41
+      residual against endpoint: 1.3588%
+
+    B_fit rank:        1.0 of 52
+    B_fit percentile:  0.00
+    Evidence band:     strong
+
+  CHAIN: down (m_t/m_d)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Within-family fits held fixed:
+      b/s      R_obs=     52.0079  fit=52    2^2x13
+      s/d      R_obs=     19.8438  fit=20    2^2x5
+    Within-family product: 1.040000e+03
+
+    Endpoint observed (m_t/m_X): 6.439063e+04
+    B_obs       (observed bridge ratio):  62.392127
+    B_required  (chain-target bridge):    61.914063
+    B_obs - B_required: +0.478065 (+0.7721%)
+
+    B_fit (test14 selection): 62 = 2x31
+      residual against endpoint: 0.1388%
+    Pool size: 42 (window = [31.20, 124.78])
+    Best candidate in pool: 62 = 2x31
+      residual against endpoint: 0.1388%
+
+    B_fit rank:        1.0 of 42
+    B_fit percentile:  0.00
+    Evidence band:     strong
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: 10_TeV
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  CHAIN: lepton (m_t/m_e)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Within-family fits held fixed:
+      tau/mu   R_obs=     16.9871  fit=17    17
+      mu/e     R_obs=    210.6626  fit=211   211
+    Within-family product: 3.587000e+03
+
+    Endpoint observed (m_t/m_X): 2.765689e+05
+    B_obs       (observed bridge ratio):  77.285210
+    B_required  (chain-target bridge):    77.103112
+    B_obs - B_required: +0.182098 (+0.2362%)
+
+    B_fit (test14 selection): 76 = 2^2x19
+      residual against endpoint: 1.4307%
+    Pool size: 51 (window = [38.64, 154.57])
+    Best candidate in pool: 76 = 2^2x19
+      residual against endpoint: 1.4307%
+
+    B_fit rank:        1.0 of 51
+    B_fit percentile:  0.00
+    Evidence band:     strong
+
+  CHAIN: down (m_t/m_d)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Within-family fits held fixed:
+      b/s      R_obs=     51.4876  fit=52    2^2x13
+      s/d      R_obs=     19.8361  fit=20    2^2x5
+    Within-family product: 1.040000e+03
+
+    Endpoint observed (m_t/m_X): 6.459016e+04
+    B_obs       (observed bridge ratio):  63.242376
+    B_required  (chain-target bridge):    62.105927
+    B_obs - B_required: +1.136449 (+1.8299%)
+
+    B_fit (test14 selection): 62 = 2x31
+      residual against endpoint: 0.1706%
+    Pool size: 42 (window = [31.62, 126.48])
+    Best candidate in pool: 62 = 2x31
+      residual against endpoint: 0.1706%
+
+    B_fit rank:        1.0 of 42
+    B_fit percentile:  0.00
+    Evidence band:     strong
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: 100_TeV
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  CHAIN: lepton (m_t/m_e)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Within-family fits held fixed:
+      tau/mu   R_obs=     16.9874  fit=17    17
+      mu/e     R_obs=    210.6610  fit=211   211
+    Within-family product: 3.587000e+03
+
+    Endpoint observed (m_t/m_X): 2.552292e+05
+    B_obs       (observed bridge ratio):  71.321233
+    B_required  (chain-target bridge):    71.153958
+    B_obs - B_required: +0.167275 (+0.2351%)
+
+    B_fit (test14 selection): 71 = 71
+      residual against endpoint: 0.2164%
+    Pool size: 48 (window = [35.66, 142.64])
+    Best candidate in pool: 71 = 71
+      residual against endpoint: 0.2164%
+
+    B_fit rank:        1.0 of 48
+    B_fit percentile:  0.00
+    Evidence band:     strong
+
+  CHAIN: down (m_t/m_d)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Within-family fits held fixed:
+      b/s      R_obs=     50.9009  fit=52    2^2x13
+      s/d      R_obs=     19.8214  fit=20    2^2x5
+    Within-family product: 1.040000e+03
+
+    Endpoint observed (m_t/m_X): 6.525893e+04
+    B_obs       (observed bridge ratio):  64.681416
+    B_required  (chain-target bridge):    62.748970
+    B_obs - B_required: +1.932446 (+3.0796%)
+
+    B_fit (test14 selection): 67 = 67
+      residual against endpoint: 6.7747%
+    Pool size: 43 (window = [32.34, 129.36])
+    Best candidate in pool: 62 = 2x31
+      residual against endpoint: 1.1936%
+
+    B_fit rank:        4.0 of 43
+    B_fit percentile:  7.14
+    Evidence band:     modest
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: 1e7_GeV
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  CHAIN: lepton (m_t/m_e)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Within-family fits held fixed:
+      tau/mu   R_obs=     16.9875  fit=17    17
+      mu/e     R_obs=    210.6656  fit=211   211
+    Within-family product: 3.587000e+03
+
+    Endpoint observed (m_t/m_X): 2.253060e+05
+    B_obs       (observed bridge ratio):  62.957911
+    B_required  (chain-target bridge):    62.811807
+    B_obs - B_required: +0.146104 (+0.2326%)
+
+    B_fit (test14 selection): 62 = 2x31
+      residual against endpoint: 1.2924%
+    Pool size: 42 (window = [31.48, 125.92])
+    Best candidate in pool: 62 = 2x31
+      residual against endpoint: 1.2924%
+
+    B_fit rank:        1.0 of 42
+    B_fit percentile:  0.00
+    Evidence band:     strong
+
+  CHAIN: down (m_t/m_d)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Within-family fits held fixed:
+      b/s      R_obs=     49.7927  fit=52    2^2x13
+      s/d      R_obs=     19.8969  fit=20    2^2x5
+    Within-family product: 1.040000e+03
+
+    Endpoint observed (m_t/m_X): 6.661856e+04
+    B_obs       (observed bridge ratio):  67.242456
+    B_required  (chain-target bridge):    64.056305
+    B_obs - B_required: +3.186151 (+4.9740%)
+
+    B_fit (test14 selection): 67 = 67
+      residual against endpoint: 4.5955%
+    Pool size: 45 (window = [33.62, 134.48])
+    Best candidate in pool: 62 = 2x31
+      residual against endpoint: 3.2102%
+
+    B_fit rank:        2.0 of 45
+    B_fit percentile:  2.27
+    Evidence band:     strong
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: 1e9_GeV
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  CHAIN: lepton (m_t/m_e)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Within-family fits held fixed:
+      tau/mu   R_obs=     16.9858  fit=17    17
+      mu/e     R_obs=    210.6637  fit=211   211
+    Within-family product: 3.587000e+03
+
+    Endpoint observed (m_t/m_X): 2.047846e+05
+    B_obs       (observed bridge ratio):  57.229683
+    B_required  (chain-target bridge):    57.090778
+    B_obs - B_required: +0.138905 (+0.2433%)
+
+    B_fit (test14 selection): 58 = 2x29
+      residual against endpoint: 1.5926%
+    Pool size: 40 (window = [28.61, 114.46])
+    Best candidate in pool: 58 = 2x29
+      residual against endpoint: 1.5926%
+
+    B_fit rank:        1.0 of 40
+    B_fit percentile:  0.00
+    Evidence band:     strong
+
+  CHAIN: down (m_t/m_d)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Within-family fits held fixed:
+      b/s      R_obs=     49.0698  fit=47    47
+      s/d      R_obs=     19.7701  fit=20    2^2x5
+    Within-family product: 9.400000e+02
+
+    Endpoint observed (m_t/m_X): 6.710345e+04
+    B_obs       (observed bridge ratio):  69.170616
+    B_required  (chain-target bridge):    71.386647
+    B_obs - B_required: -2.216031 (-3.1043%)
+
+    B_fit (test14 selection): 68 = 2^2x17
+      residual against endpoint: 4.7441%
+    Pool size: 46 (window = [34.59, 138.34])
+    Best candidate in pool: 71 = 71
+      residual against endpoint: 0.5416%
+
+    B_fit rank:        4.0 of 46
+    B_fit percentile:  6.67
+    Evidence band:     modest
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: 1e12_GeV
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  CHAIN: lepton (m_t/m_e)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Within-family fits held fixed:
+      tau/mu   R_obs=     16.9871  fit=17    17
+      mu/e     R_obs=    210.6619  fit=211   211
+    Within-family product: 3.587000e+03
+
+    Endpoint observed (m_t/m_X): 1.836443e+05
+    B_obs       (observed bridge ratio):  51.318418
+    B_required  (chain-target bridge):    51.197182
+    B_obs - B_required: +0.121236 (+0.2368%)
+
+    B_fit (test14 selection): 52 = 2^2x13
+      residual against endpoint: 1.5681%
+    Pool size: 36 (window = [25.66, 102.64])
+    Best candidate in pool: 52 = 2^2x13
+      residual against endpoint: 1.5681%
+
+    B_fit rank:        1.0 of 36
+    B_fit percentile:  0.00
+    Evidence band:     strong
+
+  CHAIN: down (m_t/m_d)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Within-family fits held fixed:
+      b/s      R_obs=     47.9333  fit=47    47
+      s/d      R_obs=     20.0000  fit=20    2^2x5
+    Within-family product: 9.400000e+02
+
+    Endpoint observed (m_t/m_X): 6.850667e+04
+    B_obs       (observed bridge ratio):  71.460362
+    B_required  (chain-target bridge):    72.879433
+    B_obs - B_required: -1.419071 (-1.9471%)
+
+    B_fit (test14 selection): 71 = 71
+      residual against endpoint: 2.5788%
+    Pool size: 48 (window = [35.73, 142.92])
+    Best candidate in pool: 73 = 73
+      residual against endpoint: 0.1654%
+
+    B_fit rank:        3.0 of 48
+    B_fit percentile:  4.26
+    Evidence band:     strong
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: 1e16_GeV
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  CHAIN: lepton (m_t/m_e)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Within-family fits held fixed:
+      tau/mu   R_obs=     16.9865  fit=17    17
+      mu/e     R_obs=    210.6738  fit=211   211
+    Within-family product: 3.587000e+03
+
+    Endpoint observed (m_t/m_X): 1.653611e+05
+    B_obs       (observed bridge ratio):  46.208113
+    B_required  (chain-target bridge):    46.100099
+    B_obs - B_required: +0.108014 (+0.2343%)
+
+    B_fit (test14 selection): 46 = 2x23
+      residual against endpoint: 0.2171%
+    Pool size: 34 (window = [23.10, 92.42])
+    Best candidate in pool: 46 = 2x23
+      residual against endpoint: 0.2171%
+
+    B_fit rank:        1.0 of 34
+    B_fit percentile:  0.00
+    Evidence band:     strong
+
+  CHAIN: down (m_t/m_d)
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Within-family fits held fixed:
+      b/s      R_obs=     46.9767  fit=47    47
+      s/d      R_obs=     19.8462  fit=20    2^2x5
+    Within-family product: 9.400000e+02
+
+    Endpoint observed (m_t/m_X): 6.852308e+04
+    B_obs       (observed bridge ratio):  73.498350
+    B_required  (chain-target bridge):    72.896890
+    B_obs - B_required: +0.601459 (+0.8251%)
+
+    B_fit (test14 selection): 73 = 73
+      residual against endpoint: 0.1414%
+    Pool size: 49 (window = [36.75, 147.00])
+    Best candidate in pool: 73 = 73
+      residual against endpoint: 0.1414%
+
+    B_fit rank:        1.0 of 49
+    B_fit percentile:  0.00
+    Evidence band:     strong
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+GRAND SUMMARY — B_FIT RANK / PERCENTILE / BAND PER CHAIN PER SCALE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Scale                                lepton (m_t/m_e)                           down (m_t/m_d)
+                     rank/N      pct     band                   rank/N      pct     band          
+──────────── ──────────────────────────────────────── ────────────────────────────────────────
+M_Z               1.0/61      0.00   strong                1.0/41      0.00   strong          
+1_TeV             1.0/55      0.00   strong                1.0/42      0.00   strong          
+3_TeV             1.0/52      0.00   strong                1.0/42      0.00   strong          
+10_TeV            1.0/51      0.00   strong                1.0/42      0.00   strong          
+100_TeV           1.0/48      0.00   strong                4.0/43      7.14   modest          
+1e7_GeV           1.0/42      0.00   strong                2.0/45      2.27   strong          
+1e9_GeV           1.0/40      0.00   strong                4.0/46      6.67   modest          
+1e12_GeV          1.0/36      0.00   strong                3.0/48      4.26   strong          
+1e16_GeV          1.0/34      0.00   strong                1.0/49      0.00   strong          
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+AGGREGATE EVIDENCE — N OUT OF 9 SCALES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  lepton (m_t/m_e)
+    Strong:  9/9
+    Modest:  0/9
+    Weak:    0/9
+    None:    0/9
+
+  down (m_t/m_d)
+    Strong:  7/9
+    Modest:  2/9
+    Weak:    0/9
+    None:    0/9
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+INTERPRETATION CAUTION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Because B_fit was selected by test14 as nearest to B_obs, and B_required
+is usually close to B_obs, a strong rank partly reflects nearest-candidate
+behaviour. The test is strongest at scales where B_required is noticeably
+shifted from B_obs and B_fit still ranks well. Per-scale reporting above
+includes both B_obs and B_required so the shift is visible.
+
+This is a local bridge-density null. A strong rank supports the bridge
+edge being more than magnitude-compatible. Modal-equivalence requires the
+closure constraint of test19.
+
+Total runtime: 0.0s
+Done.

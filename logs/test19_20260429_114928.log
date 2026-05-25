@@ -1,0 +1,1392 @@
+====================================================================================================
+FERMION MASS PRIMES TEST 19
+Held-out cycle closure
+====================================================================================================
+Graph-closure test on the modal-equivalence reading. Tree built from
+two cross-family bridges (t/tau, t/b) plus within-family edges.
+Predicts seven held-out cross-family edges; tests whether predictions
+match observation across nine common scales.
+
+Reading rules (per cell, |compositional residual|):
+  Strong:  <= 5%
+  Modest:  5  < x <= 15%
+  Weak:    15 < x <= 30%
+  None:    > 30%
+
+Identity check tolerance: 1e-09
+Direct fit small threshold: 3.0%
+Grammar floor: R = 3.0
+
+Held-out edges:
+  c/s      = t/b x b/s / t/c
+  d/u      = t/c x c/u / t/b / b/s / s/d
+  u/e      = t/tau x tau/mu x mu/e / t/c / c/u
+  c/mu     = t/tau x tau/mu / t/c
+  d/e      = t/tau x tau/mu x mu/e / t/b / b/s / s/d
+  mu/s     = t/b x b/s / t/tau / tau/mu
+  b/tau    = t/tau / t/b
+
+Scales: 9 common scales (PDG excluded by design)
+Candidates generated: 346 (2^a x p up to 1015)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: M_Z
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  EDGE: c/s
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/b        t14         +1      59.3252        59      -0.5481%
+    b/s        t11         +1      53.2680        53      -0.5031%
+    t/c        t11         -1     271.6292       271      -0.2316%
+
+    Directed observed:  1.163399e+01
+    Directed predicted: 1.153875e+01
+    Signed compositional residual:  -0.8186%
+    Implied compositional residual: -0.8186%
+    Identity check discrepancy:     -1.73e-16
+    Identity check: OK
+    Direct grammar fit: orient=c>s, R_obs=11.6340, fit=12 (2^2x3), residual=3.1461%
+    Compositional band: strong  (|residual| = 0.8186%)
+    Quadrant: [direct large/none AND compositional small — tree predicts better than local grammar candidate]
+
+  EDGE: d/u
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/c        t11         +1     271.6292       271      -0.2316%
+    c/u        t11         +1     505.6818       508      +0.4584%
+    t/b        t14         -1      59.3252        59      -0.5481%
+    b/s        t11         -1      53.2680        53      -0.5031%
+    s/d        t11         -1      19.8701        20      +0.6536%
+
+    Directed observed:  2.187500e+00
+    Directed predicted: 2.201279e+00
+    Signed compositional residual:  +0.6299%
+    Implied compositional residual: +0.6299%
+    Identity check discrepancy:     +8.85e-17
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=2.1875 < 3.0)
+    Compositional band: strong  (|residual| = 0.6299%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+  EDGE: u/e
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      97.3052        97      -0.3137%
+    tau/mu     t11         +1      16.9865        17      +0.0796%
+    mu/e       t11         +1     210.6642       211      +0.1594%
+    t/c        t11         -1     271.6292       271      -0.2316%
+    c/u        t11         -1     505.6818       508      +0.4584%
+
+    Directed observed:  2.534991e+00
+    Directed predicted: 2.527377e+00
+    Signed compositional residual:  -0.3003%
+    Implied compositional residual: -0.3003%
+    Identity check discrepancy:     +9.97e-17
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=2.5350 < 3.0)
+    Compositional band: strong  (|residual| = 0.3003%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+  EDGE: c/mu
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      97.3052        97      -0.3137%
+    tau/mu     t11         +1      16.9865        17      +0.0796%
+    t/c        t11         -1     271.6292       271      -0.2316%
+
+    Directed observed:  6.085033e+00
+    Directed predicted: 6.084871e+00
+    Signed compositional residual:  -0.0027%
+    Implied compositional residual: -0.0027%
+    Identity check discrepancy:     +9.97e-17
+    Identity check: OK
+    Direct grammar fit: orient=c>mu, R_obs=6.0850, fit=6 (2x3), residual=1.3974%
+    Compositional band: strong  (|residual| = 0.0027%)
+    Quadrant: [direct small AND compositional small]
+
+  EDGE: d/e
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      97.3052        97      -0.3137%
+    tau/mu     t11         +1      16.9865        17      +0.0796%
+    mu/e       t11         +1     210.6642       211      +0.1594%
+    t/b        t14         -1      59.3252        59      -0.5481%
+    b/s        t11         -1      53.2680        53      -0.5031%
+    s/d        t11         -1      19.8701        20      +0.6536%
+
+    Directed observed:  5.545293e+00
+    Directed predicted: 5.563463e+00
+    Signed compositional residual:  +0.3277%
+    Implied compositional residual: +0.3277%
+    Identity check discrepancy:     +1.86e-17
+    Identity check: OK
+    Direct grammar fit: orient=d>e, R_obs=5.5453, fit=6 (2x3), residual=8.1999%
+    Compositional band: strong  (|residual| = 0.3277%)
+    Quadrant: [direct large/none AND compositional small — tree predicts better than local grammar candidate]
+
+  EDGE: mu/s
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/b        t14         +1      59.3252        59      -0.5481%
+    b/s        t11         +1      53.2680        53      -0.5031%
+    t/tau      t14         -1      97.3052        97      -0.3137%
+    tau/mu     t11         -1      16.9865        17      +0.0796%
+
+    Directed observed:  1.911902e+00
+    Directed predicted: 1.896301e+00
+    Signed compositional residual:  -0.8160%
+    Implied compositional residual: -0.8160%
+    Identity check discrepancy:     +6.25e-17
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=1.9119 < 3.0)
+    Compositional band: strong  (|residual| = 0.8160%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+  EDGE: b/tau
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      97.3052        97      -0.3137%
+    t/b        t14         -1      59.3252        59      -0.5481%
+
+    Directed observed:  1.640202e+00
+    Directed predicted: 1.644068e+00
+    Signed compositional residual:  +0.2357%
+    Implied compositional residual: +0.2357%
+    Identity check discrepancy:     +1.14e-16
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=1.6402 < 3.0)
+    Compositional band: strong  (|residual| = 0.2357%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: 1_TeV
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  EDGE: c/s
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/b        t14         +1      61.4989        61      -0.8113%
+    b/s        t11         +1      52.2761        52      -0.5282%
+    t/c        t11         -1     277.0418       277      -0.0151%
+
+    Directed observed:  1.160448e+01
+    Directed predicted: 1.145126e+01
+    Signed compositional residual:  -1.3203%
+    Implied compositional residual: -1.3203%
+    Identity check discrepancy:     -2.05e-16
+    Identity check: OK
+    Direct grammar fit: orient=c>s, R_obs=11.6045, fit=12 (2^2x3), residual=3.4084%
+    Compositional band: strong  (|residual| = 1.3203%)
+    Quadrant: [direct large/none AND compositional small — tree predicts better than local grammar candidate]
+
+  EDGE: d/u
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/c        t11         +1     277.0418       277      -0.0151%
+    c/u        t11         +1     505.6911       508      +0.4566%
+    t/b        t14         -1      61.4989        61      -0.8113%
+    b/s        t11         -1      52.2761        52      -0.5282%
+    s/d        t11         -1      19.8519        20      +0.7463%
+
+    Directed observed:  2.195122e+00
+    Directed predicted: 2.218096e+00
+    Signed compositional residual:  +1.0466%
+    Implied compositional residual: +1.0466%
+    Identity check discrepancy:     -2.26e-17
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=2.1951 < 3.0)
+    Compositional band: strong  (|residual| = 1.0466%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+  EDGE: u/e
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      85.2985        86      +0.8224%
+    tau/mu     t11         +1      16.9865        17      +0.0797%
+    mu/e       t11         +1     210.6671       211      +0.1580%
+    t/c        t11         -1     277.0418       277      -0.0151%
+    c/u        t11         -1     505.6911       508      +0.4566%
+
+    Directed observed:  2.178765e+00
+    Directed predicted: 2.192231e+00
+    Signed compositional residual:  +0.6181%
+    Implied compositional residual: +0.6181%
+    Identity check discrepancy:     -7.37e-17
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=2.1788 < 3.0)
+    Compositional band: strong  (|residual| = 0.6181%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+  EDGE: c/mu
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      85.2985        86      +0.8224%
+    tau/mu     t11         +1      16.9865        17      +0.0797%
+    t/c        t11         -1     277.0418       277      -0.0151%
+
+    Directed observed:  5.229967e+00
+    Directed predicted: 5.277978e+00
+    Signed compositional residual:  +0.9180%
+    Implied compositional residual: +0.9180%
+    Identity check discrepancy:     +1.96e-16
+    Identity check: OK
+    Direct grammar fit: orient=c>mu, R_obs=5.2300, fit=5 (5), residual=4.3971%
+    Compositional band: strong  (|residual| = 0.9180%)
+    Quadrant: [direct large/none AND compositional small — tree predicts better than local grammar candidate]
+
+  EDGE: d/e
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      85.2985        86      +0.8224%
+    tau/mu     t11         +1      16.9865        17      +0.0797%
+    mu/e       t11         +1     210.6671       211      +0.1580%
+    t/b        t14         -1      61.4989        61      -0.8113%
+    b/s        t11         -1      52.2761        52      -0.5282%
+    s/d        t11         -1      19.8519        20      +0.7463%
+
+    Directed observed:  4.782655e+00
+    Directed predicted: 4.862579e+00
+    Signed compositional residual:  +1.6711%
+    Implied compositional residual: +1.6711%
+    Identity check discrepancy:     +1.11e-16
+    Identity check: OK
+    Direct grammar fit: orient=d>e, R_obs=4.7827, fit=5 (5), residual=4.5444%
+    Compositional band: strong  (|residual| = 1.6711%)
+    Quadrant: [direct large/none AND compositional small — tree predicts better than local grammar candidate]
+
+  EDGE: mu/s
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/b        t14         +1      61.4989        61      -0.8113%
+    b/s        t11         +1      52.2761        52      -0.5282%
+    t/tau      t14         -1      85.2985        86      +0.8224%
+    tau/mu     t11         -1      16.9865        17      +0.0797%
+
+    Directed observed:  2.218843e+00
+    Directed predicted: 2.169631e+00
+    Signed compositional residual:  -2.2179%
+    Implied compositional residual: -2.2179%
+    Identity check discrepancy:     -2.98e-16
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=2.2188 < 3.0)
+    Compositional band: strong  (|residual| = 2.2179%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+  EDGE: b/tau
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      85.2985        86      +0.8224%
+    t/b        t14         -1      61.4989        61      -0.8113%
+
+    Directed observed:  1.386991e+00
+    Directed predicted: 1.409836e+00
+    Signed compositional residual:  +1.6471%
+    Implied compositional residual: +1.6471%
+    Identity check discrepancy:     +3.82e-16
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=1.3870 < 3.0)
+    Compositional band: strong  (|residual| = 1.6471%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: 3_TeV
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  EDGE: c/s
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/b        t14         +1      62.3921        62      -0.6285%
+    b/s        t11         +1      52.0079        52      -0.0151%
+    t/c        t11         -1     279.3898       278      -0.4975%
+
+    Directed observed:  1.161417e+01
+    Directed predicted: 1.159712e+01
+    Signed compositional residual:  -0.1468%
+    Implied compositional residual: -0.1468%
+    Identity check discrepancy:     +2.19e-16
+    Identity check: OK
+    Direct grammar fit: orient=c>s, R_obs=11.6142, fit=12 (2^2x3), residual=3.3220%
+    Compositional band: strong  (|residual| = 0.1468%)
+    Quadrant: [direct large/none AND compositional small — tree predicts better than local grammar candidate]
+
+  EDGE: d/u
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/c        t11         +1     279.3898       278      -0.4975%
+    c/u        t11         +1     505.1370       503      -0.4231%
+    t/b        t14         -1      62.3921        62      -0.6285%
+    b/s        t11         -1      52.0079        52      -0.0151%
+    s/d        t11         -1      19.8438        20      +0.7874%
+
+    Directed observed:  2.191781e+00
+    Directed predicted: 2.168641e+00
+    Signed compositional residual:  -1.0557%
+    Implied compositional residual: -1.0557%
+    Identity check discrepancy:     -1.28e-16
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=2.1918 < 3.0)
+    Compositional band: strong  (|residual| = 1.0557%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+  EDGE: u/e
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      81.0981        82      +1.1121%
+    tau/mu     t11         +1      16.9856        17      +0.0847%
+    mu/e       t11         +1     210.6647       211      +0.1591%
+    t/c        t11         -1     279.3898       278      -0.4975%
+    c/u        t11         -1     505.1370       503      -0.4231%
+
+    Directed observed:  2.056193e+00
+    Directed predicted: 2.103451e+00
+    Signed compositional residual:  +2.2983%
+    Implied compositional residual: +2.2983%
+    Identity check discrepancy:     +6.25e-17
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=2.0562 < 3.0)
+    Compositional band: strong  (|residual| = 2.2983%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+  EDGE: c/mu
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      81.0981        82      +1.1121%
+    tau/mu     t11         +1      16.9856        17      +0.0847%
+    t/c        t11         -1     279.3898       278      -0.4975%
+
+    Directed observed:  4.930390e+00
+    Directed predicted: 5.014388e+00
+    Signed compositional residual:  +1.7037%
+    Implied compositional residual: +1.7037%
+    Identity check discrepancy:     +1.39e-17
+    Identity check: OK
+    Direct grammar fit: orient=c>mu, R_obs=4.9304, fit=5 (5), residual=1.4119%
+    Compositional band: strong  (|residual| = 1.7037%)
+    Quadrant: [direct small AND compositional small]
+
+  EDGE: d/e
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      81.0981        82      +1.1121%
+    tau/mu     t11         +1      16.9856        17      +0.0847%
+    mu/e       t11         +1     210.6647       211      +0.1591%
+    t/b        t14         -1      62.3921        62      -0.6285%
+    b/s        t11         -1      52.0079        52      -0.0151%
+    s/d        t11         -1      19.8438        20      +0.7874%
+
+    Directed observed:  4.506725e+00
+    Directed predicted: 4.561632e+00
+    Signed compositional residual:  +1.2183%
+    Implied compositional residual: +1.2183%
+    Identity check discrepancy:     -1.23e-16
+    Identity check: OK
+    Direct grammar fit: orient=d>e, R_obs=4.5067, fit=5 (5), residual=10.9453%
+    Compositional band: strong  (|residual| = 1.2183%)
+    Quadrant: [direct large/none AND compositional small — tree predicts better than local grammar candidate]
+
+  EDGE: mu/s
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/b        t14         +1      62.3921        62      -0.6285%
+    b/s        t11         +1      52.0079        52      -0.0151%
+    t/tau      t14         -1      81.0981        82      +1.1121%
+    tau/mu     t11         -1      16.9856        17      +0.0847%
+
+    Directed observed:  2.355630e+00
+    Directed predicted: 2.312769e+00
+    Signed compositional residual:  -1.8195%
+    Implied compositional residual: -1.8195%
+    Identity check discrepancy:     +3.05e-16
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=2.3556 < 3.0)
+    Compositional band: strong  (|residual| = 1.8195%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+  EDGE: b/tau
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      81.0981        82      +1.1121%
+    t/b        t14         -1      62.3921        62      -0.6285%
+
+    Directed observed:  1.299813e+00
+    Directed predicted: 1.322581e+00
+    Signed compositional residual:  +1.7516%
+    Implied compositional residual: +1.7516%
+    Identity check discrepancy:     -2.67e-16
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=1.2998 < 3.0)
+    Compositional band: strong  (|residual| = 1.7516%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: 10_TeV
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  EDGE: c/s
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/b        t14         +1      63.2424        62      -1.9645%
+    b/s        t11         +1      51.4876        52      +0.9952%
+    t/c        t11         -1     281.4286       281      -0.1523%
+
+    Directed observed:  1.157025e+01
+    Directed predicted: 1.147331e+01
+    Signed compositional residual:  -0.8378%
+    Implied compositional residual: -0.8378%
+    Identity check discrepancy:     +6.94e-18
+    Identity check: OK
+    Direct grammar fit: orient=c>s, R_obs=11.5702, fit=12 (2^2x3), residual=3.7143%
+    Compositional band: strong  (|residual| = 0.8378%)
+    Quadrant: [direct large/none AND compositional small — tree predicts better than local grammar candidate]
+
+  EDGE: d/u
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/c        t11         +1     281.4286       281      -0.1523%
+    c/u        t11         +1     505.4152       503      -0.4779%
+    t/b        t14         -1      63.2424        62      -1.9645%
+    b/s        t11         -1      51.4876        52      +0.9952%
+    s/d        t11         -1      19.8361        20      +0.8264%
+
+    Directed observed:  2.202166e+00
+    Directed predicted: 2.192044e+00
+    Signed compositional residual:  -0.4596%
+    Implied compositional residual: -0.4596%
+    Identity check discrepancy:     -2.06e-16
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=2.2022 < 3.0)
+    Compositional band: strong  (|residual| = 0.4596%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+  EDGE: u/e
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      77.2852        76      -1.6629%
+    tau/mu     t11         +1      16.9871        17      +0.0759%
+    mu/e       t11         +1     210.6626       211      +0.1601%
+    t/c        t11         -1     281.4286       281      -0.1523%
+    c/u        t11         -1     505.4152       503      -0.4779%
+
+    Directed observed:  1.944405e+00
+    Directed predicted: 1.928727e+00
+    Signed compositional residual:  -0.8064%
+    Implied compositional residual: -0.8064%
+    Identity check discrepancy:     +2.95e-17
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=1.9444 < 3.0)
+    Compositional band: strong  (|residual| = 0.8064%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+  EDGE: c/mu
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      77.2852        76      -1.6629%
+    tau/mu     t11         +1      16.9871        17      +0.0759%
+    t/c        t11         -1     281.4286       281      -0.1523%
+
+    Directed observed:  4.664956e+00
+    Directed predicted: 4.597865e+00
+    Signed compositional residual:  -1.4382%
+    Implied compositional residual: -1.4382%
+    Identity check discrepancy:     -1.20e-16
+    Identity check: OK
+    Direct grammar fit: orient=c>mu, R_obs=4.6650, fit=5 (5), residual=7.1821%
+    Compositional band: strong  (|residual| = 1.4382%)
+    Quadrant: [direct large/none AND compositional small — tree predicts better than local grammar candidate]
+
+  EDGE: d/e
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      77.2852        76      -1.6629%
+    tau/mu     t11         +1      16.9871        17      +0.0759%
+    mu/e       t11         +1     210.6626       211      +0.1601%
+    t/b        t14         -1      63.2424        62      -1.9645%
+    b/s        t11         -1      51.4876        52      +0.9952%
+    s/d        t11         -1      19.8361        20      +0.8264%
+
+    Directed observed:  4.281904e+00
+    Directed predicted: 4.227854e+00
+    Signed compositional residual:  -1.2623%
+    Implied compositional residual: -1.2623%
+    Identity check discrepancy:     -2.81e-16
+    Identity check: OK
+    Direct grammar fit: orient=d>e, R_obs=4.2819, fit=5 (5), residual=16.7705%
+    Compositional band: strong  (|residual| = 1.2623%)
+    Quadrant: [direct large/none AND compositional small — tree predicts better than local grammar candidate]
+
+  EDGE: mu/s
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/b        t14         +1      63.2424        62      -1.9645%
+    b/s        t11         +1      51.4876        52      +0.9952%
+    t/tau      t14         -1      77.2852        76      -1.6629%
+    tau/mu     t11         -1      16.9871        17      +0.0759%
+
+    Directed observed:  2.480248e+00
+    Directed predicted: 2.495356e+00
+    Signed compositional residual:  +0.6091%
+    Implied compositional residual: +0.6091%
+    Identity check discrepancy:     +2.47e-16
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=2.4802 < 3.0)
+    Compositional band: strong  (|residual| = 0.6091%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+  EDGE: b/tau
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      77.2852        76      -1.6629%
+    t/b        t14         -1      63.2424        62      -1.9645%
+
+    Directed observed:  1.222048e+00
+    Directed predicted: 1.225806e+00
+    Signed compositional residual:  +0.3076%
+    Implied compositional residual: +0.3076%
+    Identity check discrepancy:     -1.13e-16
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=1.2220 < 3.0)
+    Compositional band: strong  (|residual| = 0.3076%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: 100_TeV
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  EDGE: c/s
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/b        t14         +1      64.6814        67      +3.5846%
+    b/s        t11         +1      50.9009        52      +2.1593%
+    t/c        t11         -1     284.3969       284      -0.1396%
+
+    Directed observed:  1.157658e+01
+    Directed predicted: 1.226761e+01
+    Signed compositional residual:  +5.9692%
+    Implied compositional residual: +5.9692%
+    Identity check discrepancy:     -1.53e-16
+    Identity check: OK
+    Direct grammar fit: orient=c>s, R_obs=11.5766, fit=12 (2^2x3), residual=3.6576%
+    Compositional band: modest  (|residual| = 5.9692%)
+    Quadrant: [direct large AND compositional large]
+
+  EDGE: d/u
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/c        t11         +1     284.3969       284      -0.1396%
+    c/u        t11         +1     506.9034       508      +0.2163%
+    t/b        t14         -1      64.6814        67      +3.5846%
+    b/s        t11         -1      50.9009        52      +2.1593%
+    s/d        t11         -1      19.8214        20      +0.9009%
+
+    Directed observed:  2.209073e+00
+    Directed predicted: 2.070494e+00
+    Signed compositional residual:  -6.2732%
+    Implied compositional residual: -6.2732%
+    Identity check discrepancy:     +0.00e+00
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=2.2091 < 3.0)
+    Compositional band: modest  (|residual| = 6.2732%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+  EDGE: u/e
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      71.3212        71      -0.4504%
+    tau/mu     t11         +1      16.9874        17      +0.0741%
+    mu/e       t11         +1     210.6610       211      +0.1609%
+    t/c        t11         -1     284.3969       284      -0.1396%
+    c/u        t11         -1     506.9034       508      +0.2163%
+
+    Directed observed:  1.770437e+00
+    Directed predicted: 1.765256e+00
+    Signed compositional residual:  -0.2926%
+    Implied compositional residual: -0.2926%
+    Identity check discrepancy:     -8.15e-17
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=1.7704 < 3.0)
+    Compositional band: strong  (|residual| = 0.2926%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+  EDGE: c/mu
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      71.3212        71      -0.4504%
+    tau/mu     t11         +1      16.9874        17      +0.0741%
+    t/c        t11         -1     284.3969       284      -0.1396%
+
+    Directed observed:  4.260116e+00
+    Directed predicted: 4.250000e+00
+    Signed compositional residual:  -0.2375%
+    Implied compositional residual: -0.2375%
+    Identity check discrepancy:     -2.86e-16
+    Identity check: OK
+    Direct grammar fit: orient=c>mu, R_obs=4.2601, fit=5 (5), residual=17.3677%
+    Compositional band: strong  (|residual| = 0.2375%)
+    Quadrant: [direct large/none AND compositional small — tree predicts better than local grammar candidate]
+
+  EDGE: d/e
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      71.3212        71      -0.4504%
+    tau/mu     t11         +1      16.9874        17      +0.0741%
+    mu/e       t11         +1     210.6610       211      +0.1609%
+    t/b        t14         -1      64.6814        67      +3.5846%
+    b/s        t11         -1      50.9009        52      +2.1593%
+    s/d        t11         -1      19.8214        20      +0.9009%
+
+    Directed observed:  3.911024e+00
+    Directed predicted: 3.654951e+00
+    Signed compositional residual:  -6.5475%
+    Implied compositional residual: -6.5475%
+    Identity check discrepancy:     -4.16e-17
+    Identity check: OK
+    Direct grammar fit: orient=d>e, R_obs=3.9110, fit=3 (3), residual=23.2937%
+    Compositional band: modest  (|residual| = 6.5475%)
+    Quadrant: [direct large AND compositional large]
+
+  EDGE: mu/s
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/b        t14         +1      64.6814        67      +3.5846%
+    b/s        t11         +1      50.9009        52      +2.1593%
+    t/tau      t14         -1      71.3212        71      -0.4504%
+    tau/mu     t11         -1      16.9874        17      +0.0741%
+
+    Directed observed:  2.717432e+00
+    Directed predicted: 2.886495e+00
+    Signed compositional residual:  +6.2214%
+    Implied compositional residual: +6.2214%
+    Identity check discrepancy:     -6.25e-17
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=2.7174 < 3.0)
+    Compositional band: modest  (|residual| = 6.2214%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+  EDGE: b/tau
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      71.3212        71      -0.4504%
+    t/b        t14         -1      64.6814        67      +3.5846%
+
+    Directed observed:  1.102654e+00
+    Directed predicted: 1.059701e+00
+    Signed compositional residual:  -3.8954%
+    Implied compositional residual: -3.8954%
+    Identity check discrepancy:     -2.78e-17
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=1.1027 < 3.0)
+    Compositional band: strong  (|residual| = 3.8954%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: 1e7_GeV
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  EDGE: c/s
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/b        t14         +1      67.2425        67      -0.3606%
+    b/s        t11         +1      49.7927        52      +4.4329%
+    t/c        t11         -1     291.0811       292      +0.3157%
+
+    Directed observed:  1.150259e+01
+    Directed predicted: 1.193151e+01
+    Signed compositional residual:  +3.7289%
+    Implied compositional residual: +3.7289%
+    Identity check discrepancy:     +4.02e-16
+    Identity check: OK
+    Direct grammar fit: orient=c>s, R_obs=11.5026, fit=12 (2^2x3), residual=4.3243%
+    Compositional band: strong  (|residual| = 3.7289%)
+    Quadrant: [direct large/none AND compositional small — tree predicts better than local grammar candidate]
+
+  EDGE: d/u
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/c        t11         +1     291.0811       292      +0.3157%
+    c/u        t11         +1     505.6948       508      +0.4559%
+    t/b        t14         -1      67.2425        67      -0.3606%
+    b/s        t11         -1      49.7927        52      +4.4329%
+    s/d        t11         -1      19.8969        20      +0.5181%
+
+    Directed observed:  2.209567e+00
+    Directed predicted: 2.128817e+00
+    Signed compositional residual:  -3.6546%
+    Implied compositional residual: -3.6546%
+    Identity check discrepancy:     -2.78e-16
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=2.2096 < 3.0)
+    Compositional band: strong  (|residual| = 3.6546%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+  EDGE: u/e
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      62.9579        62      -1.5215%
+    tau/mu     t11         +1      16.9875        17      +0.0738%
+    mu/e       t11         +1     210.6656       211      +0.1587%
+    t/c        t11         -1     291.0811       292      +0.3157%
+    c/u        t11         -1     505.6948       508      +0.4559%
+
+    Directed observed:  1.530630e+00
+    Directed predicted: 1.499258e+00
+    Signed compositional residual:  -2.0496%
+    Implied compositional residual: -2.0496%
+    Identity check discrepancy:     +1.49e-16
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=1.5306 < 3.0)
+    Compositional band: strong  (|residual| = 2.0496%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+  EDGE: c/mu
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      62.9579        62      -1.5215%
+    tau/mu     t11         +1      16.9875        17      +0.0738%
+    t/c        t11         -1     291.0811       292      +0.3157%
+
+    Directed observed:  3.674219e+00
+    Directed predicted: 3.609589e+00
+    Signed compositional residual:  -1.7590%
+    Implied compositional residual: -1.7590%
+    Identity check discrepancy:     -6.25e-17
+    Identity check: OK
+    Direct grammar fit: orient=c>mu, R_obs=3.6742, fit=3 (3), residual=18.3500%
+    Compositional band: strong  (|residual| = 1.7590%)
+    Quadrant: [direct large/none AND compositional small — tree predicts better than local grammar candidate]
+
+  EDGE: d/e
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      62.9579        62      -1.5215%
+    tau/mu     t11         +1      16.9875        17      +0.0738%
+    mu/e       t11         +1     210.6656       211      +0.1587%
+    t/b        t14         -1      67.2425        67      -0.3606%
+    b/s        t11         -1      49.7927        52      +4.4329%
+    s/d        t11         -1      19.8969        20      +0.5181%
+
+    Directed observed:  3.382030e+00
+    Directed predicted: 3.191648e+00
+    Signed compositional residual:  -5.6292%
+    Implied compositional residual: -5.6292%
+    Identity check discrepancy:     -9.02e-17
+    Identity check: OK
+    Direct grammar fit: orient=d>e, R_obs=3.3820, fit=3 (3), residual=11.2959%
+    Compositional band: modest  (|residual| = 5.6292%)
+    Quadrant: [direct large AND compositional large]
+
+  EDGE: mu/s
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/b        t14         +1      67.2425        67      -0.3606%
+    b/s        t11         +1      49.7927        52      +4.4329%
+    t/tau      t14         -1      62.9579        62      -1.5215%
+    tau/mu     t11         -1      16.9875        17      +0.0738%
+
+    Directed observed:  3.130622e+00
+    Directed predicted: 3.305503e+00
+    Signed compositional residual:  +5.5861%
+    Implied compositional residual: +5.5861%
+    Identity check discrepancy:     +5.00e-16
+    Identity check: OK
+    Direct grammar fit: orient=mu>s, R_obs=3.1306, fit=3 (3), residual=4.1724%
+    Compositional band: modest  (|residual| = 5.5861%)
+    Quadrant: [direct large AND compositional large]
+
+  EDGE: b/tau
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      62.9579        62      -1.5215%
+    t/b        t14         -1      67.2425        67      -0.3606%
+
+    Directed observed:  9.362822e-01
+    Directed predicted: 9.253731e-01
+    Signed compositional residual:  -1.1651%
+    Implied compositional residual: -1.1651%
+    Identity check discrepancy:     -9.02e-17
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=1.0681 < 3.0)
+    Compositional band: strong  (|residual| = 1.1651%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: 1e9_GeV
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  EDGE: c/s
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/b        t14         +1      69.1706        68      -1.6924%
+    b/s        t11         +1      49.0698        47      -4.2180%
+    t/c        t11         -1     294.8485       296      +0.3905%
+
+    Directed observed:  1.151163e+01
+    Directed predicted: 1.079730e+01
+    Signed compositional residual:  -6.2053%
+    Implied compositional residual: -6.2053%
+    Identity check discrepancy:     +1.39e-17
+    Identity check: OK
+    Direct grammar fit: orient=c>s, R_obs=11.5116, fit=12 (2^2x3), residual=4.2424%
+    Compositional band: modest  (|residual| = 6.2053%)
+    Quadrant: [direct large AND compositional large]
+
+  EDGE: d/u
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/c        t11         +1     294.8485       296      +0.3905%
+    c/u        t11         +1     507.6923       508      +0.0606%
+    t/b        t14         -1      69.1706        68      -1.6924%
+    b/s        t11         -1      49.0698        47      -4.2180%
+    s/d        t11         -1      19.7701        20      +1.1628%
+
+    Directed observed:  2.230769e+00
+    Directed predicted: 2.352441e+00
+    Signed compositional residual:  +5.4542%
+    Implied compositional residual: +5.4542%
+    Identity check discrepancy:     -5.55e-17
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=2.2308 < 3.0)
+    Compositional band: modest  (|residual| = 5.4542%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+  EDGE: u/e
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      57.2297        58      +1.3460%
+    tau/mu     t11         +1      16.9858        17      +0.0835%
+    mu/e       t11         +1     210.6637       211      +0.1597%
+    t/c        t11         -1     294.8485       296      +0.3905%
+    c/u        t11         -1     507.6923       508      +0.0606%
+
+    Directed observed:  1.368037e+00
+    Directed predicted: 1.383579e+00
+    Signed compositional residual:  +1.1361%
+    Implied compositional residual: +1.1361%
+    Identity check discrepancy:     +1.18e-16
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=1.3680 < 3.0)
+    Compositional band: strong  (|residual| = 1.1361%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+  EDGE: c/mu
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      57.2297        58      +1.3460%
+    tau/mu     t11         +1      16.9858        17      +0.0835%
+    t/c        t11         -1     294.8485       296      +0.3905%
+
+    Directed observed:  3.296923e+00
+    Directed predicted: 3.331081e+00
+    Signed compositional residual:  +1.0361%
+    Implied compositional residual: +1.0361%
+    Identity check discrepancy:     +1.67e-16
+    Identity check: OK
+    Direct grammar fit: orient=c>mu, R_obs=3.2969, fit=3 (3), residual=9.0061%
+    Compositional band: strong  (|residual| = 1.0361%)
+    Quadrant: [direct large/none AND compositional small — tree predicts better than local grammar candidate]
+
+  EDGE: d/e
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      57.2297        58      +1.3460%
+    tau/mu     t11         +1      16.9858        17      +0.0835%
+    mu/e       t11         +1     210.6637       211      +0.1597%
+    t/b        t14         -1      69.1706        68      -1.6924%
+    b/s        t11         -1      49.0698        47      -4.2180%
+    s/d        t11         -1      19.7701        20      +1.1628%
+
+    Directed observed:  3.051775e+00
+    Directed predicted: 3.254787e+00
+    Signed compositional residual:  +6.6523%
+    Implied compositional residual: +6.6523%
+    Identity check discrepancy:     +4.02e-16
+    Identity check: OK
+    Direct grammar fit: orient=d>e, R_obs=3.0518, fit=3 (3), residual=1.6966%
+    Compositional band: modest  (|residual| = 6.6523%)
+    Quadrant: [direct small AND compositional large — challenges tree]
+
+  EDGE: mu/s
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/b        t14         +1      69.1706        68      -1.6924%
+    b/s        t11         +1      49.0698        47      -4.2180%
+    t/tau      t14         -1      57.2297        58      +1.3460%
+    tau/mu     t11         -1      16.9858        17      +0.0835%
+
+    Directed observed:  3.491628e+00
+    Directed predicted: 3.241379e+00
+    Signed compositional residual:  -7.1671%
+    Implied compositional residual: -7.1671%
+    Identity check discrepancy:     +4.16e-17
+    Identity check: OK
+    Direct grammar fit: orient=mu>s, R_obs=3.4916, fit=3 (3), residual=14.0802%
+    Compositional band: modest  (|residual| = 7.1671%)
+    Quadrant: [direct large AND compositional large]
+
+  EDGE: b/tau
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      57.2297        58      +1.3460%
+    t/b        t14         -1      69.1706        68      -1.6924%
+
+    Directed observed:  8.273699e-01
+    Directed predicted: 8.529412e-01
+    Signed compositional residual:  +3.0907%
+    Implied compositional residual: +3.0907%
+    Identity check discrepancy:     +1.49e-16
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=1.2086 < 3.0)
+    Compositional band: strong  (|residual| = 3.0907%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: 1e12_GeV
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  EDGE: c/s
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/b        t14         +1      71.4604        71      -0.6442%
+    b/s        t11         +1      47.9333        47      -1.9471%
+    t/c        t11         -1     300.4678       302      +0.5099%
+
+    Directed observed:  1.140000e+01
+    Directed predicted: 1.104967e+01
+    Signed compositional residual:  -3.0731%
+    Implied compositional residual: -3.0731%
+    Identity check discrepancy:     +1.08e-16
+    Identity check: OK
+    Direct grammar fit: orient=c>s, R_obs=11.4000, fit=11 (11), residual=3.5088%
+    Compositional band: strong  (|residual| = 3.0731%)
+    Quadrant: [direct large/none AND compositional small — tree predicts better than local grammar candidate]
+
+  EDGE: d/u
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/c        t11         +1     300.4678       302      +0.5099%
+    c/u        t11         +1     507.4184       508      +0.1146%
+    t/b        t14         -1      71.4604        71      -0.6442%
+    b/s        t11         -1      47.9333        47      -1.9471%
+    s/d        t11         -1      20.0000        20      +0.0000%
+
+    Directed observed:  2.225519e+00
+    Directed predicted: 2.298711e+00
+    Signed compositional residual:  +3.2888%
+    Implied compositional residual: +3.2888%
+    Identity check discrepancy:     -1.25e-16
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=2.2255 < 3.0)
+    Compositional band: strong  (|residual| = 3.2888%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+  EDGE: u/e
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      51.3184        52      +1.3281%
+    tau/mu     t11         +1      16.9871        17      +0.0762%
+    mu/e       t11         +1     210.6619       211      +0.1605%
+    t/c        t11         -1     300.4678       302      +0.5099%
+    c/u        t11         -1     507.4184       508      +0.1146%
+
+    Directed observed:  1.204518e+00
+    Directed predicted: 1.215805e+00
+    Signed compositional residual:  +0.9371%
+    Implied compositional residual: +0.9371%
+    Identity check discrepancy:     +4.34e-17
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=1.2045 < 3.0)
+    Compositional band: strong  (|residual| = 0.9371%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+  EDGE: c/mu
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      51.3184        52      +1.3281%
+    tau/mu     t11         +1      16.9871        17      +0.0762%
+    t/c        t11         -1     300.4678       302      +0.5099%
+
+    Directed observed:  2.901305e+00
+    Directed predicted: 2.927152e+00
+    Signed compositional residual:  +0.8909%
+    Implied compositional residual: +0.8909%
+    Identity check discrepancy:     +7.98e-17
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=2.9013 < 3.0)
+    Compositional band: strong  (|residual| = 0.8909%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+  EDGE: d/e
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      51.3184        52      +1.3281%
+    tau/mu     t11         +1      16.9871        17      +0.0762%
+    mu/e       t11         +1     210.6619       211      +0.1605%
+    t/b        t14         -1      71.4604        71      -0.6442%
+    b/s        t11         -1      47.9333        47      -1.9471%
+    s/d        t11         -1      20.0000        20      +0.0000%
+
+    Directed observed:  2.680678e+00
+    Directed predicted: 2.794786e+00
+    Signed compositional residual:  +4.2567%
+    Implied compositional residual: +4.2567%
+    Identity check discrepancy:     -2.78e-17
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=2.6807 < 3.0)
+    Compositional band: strong  (|residual| = 4.2567%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+  EDGE: mu/s
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/b        t14         +1      71.4604        71      -0.6442%
+    b/s        t11         +1      47.9333        47      -1.9471%
+    t/tau      t14         -1      51.3184        52      +1.3281%
+    tau/mu     t11         -1      16.9871        17      +0.0762%
+
+    Directed observed:  3.929267e+00
+    Directed predicted: 3.774887e+00
+    Signed compositional residual:  -3.9290%
+    Implied compositional residual: -3.9290%
+    Identity check discrepancy:     -1.80e-16
+    Identity check: OK
+    Direct grammar fit: orient=mu>s, R_obs=3.9293, fit=3 (3), residual=23.6499%
+    Compositional band: strong  (|residual| = 3.9290%)
+    Quadrant: [direct large/none AND compositional small — tree predicts better than local grammar candidate]
+
+  EDGE: b/tau
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      51.3184        52      +1.3281%
+    t/b        t14         -1      71.4604        71      -0.6442%
+
+    Directed observed:  7.181382e-01
+    Directed predicted: 7.323944e-01
+    Signed compositional residual:  +1.9852%
+    Implied compositional residual: +1.9852%
+    Identity check discrepancy:     +1.87e-16
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=1.3925 < 3.0)
+    Compositional band: strong  (|residual| = 1.9852%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: 1e16_GeV
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  EDGE: c/s
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/b        t14         +1      73.4983        73      -0.6780%
+    b/s        t11         +1      46.9767        47      +0.0495%
+    t/c        t11         -1     307.1724       307      -0.0561%
+
+    Directed observed:  1.124031e+01
+    Directed predicted: 1.117590e+01
+    Signed compositional residual:  -0.5731%
+    Implied compositional residual: -0.5731%
+    Identity check discrepancy:     +1.24e-16
+    Identity check: OK
+    Direct grammar fit: orient=c>s, R_obs=11.2403, fit=11 (11), residual=2.1379%
+    Compositional band: strong  (|residual| = 0.5731%)
+    Quadrant: [direct small AND compositional small]
+
+  EDGE: d/u
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/c        t11         +1     307.1724       307      -0.0561%
+    c/u        t11         +1     505.2265       503      -0.4407%
+    t/b        t14         -1      73.4983        73      -0.6780%
+    b/s        t11         -1      46.9767        47      +0.0495%
+    s/d        t11         -1      19.8462        20      +0.7752%
+
+    Directed observed:  2.264808e+00
+    Directed predicted: 2.250379e+00
+    Signed compositional residual:  -0.6371%
+    Implied compositional residual: -0.6371%
+    Identity check discrepancy:     -5.45e-16
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=2.2648 < 3.0)
+    Compositional band: strong  (|residual| = 0.6371%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+  EDGE: u/e
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      46.2081        46      -0.4504%
+    tau/mu     t11         +1      16.9865        17      +0.0794%
+    mu/e       t11         +1     210.6738       211      +0.1548%
+    t/c        t11         -1     307.1724       307      -0.0561%
+    c/u        t11         -1     505.2265       503      -0.4407%
+
+    Directed observed:  1.065528e+00
+    Directed predicted: 1.068520e+00
+    Signed compositional residual:  +0.2808%
+    Implied compositional residual: +0.2808%
+    Identity check discrepancy:     +4.38e-16
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=1.0655 < 3.0)
+    Compositional band: strong  (|residual| = 0.2808%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+  EDGE: c/mu
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      46.2081        46      -0.4504%
+    tau/mu     t11         +1      16.9865        17      +0.0794%
+    t/c        t11         -1     307.1724       307      -0.0561%
+
+    Directed observed:  2.555291e+00
+    Directed predicted: 2.547231e+00
+    Signed compositional residual:  -0.3154%
+    Implied compositional residual: -0.3154%
+    Identity check discrepancy:     +1.21e-17
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=2.5553 < 3.0)
+    Compositional band: strong  (|residual| = 0.3154%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+  EDGE: d/e
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      46.2081        46      -0.4504%
+    tau/mu     t11         +1      16.9865        17      +0.0794%
+    mu/e       t11         +1     210.6738       211      +0.1548%
+    t/b        t14         -1      73.4983        73      -0.6780%
+    b/s        t11         -1      46.9767        47      +0.0495%
+    s/d        t11         -1      19.8462        20      +0.7752%
+
+    Directed observed:  2.413217e+00
+    Directed predicted: 2.404576e+00
+    Signed compositional residual:  -0.3581%
+    Implied compositional residual: -0.3581%
+    Identity check discrepancy:     +1.37e-16
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=2.4132 < 3.0)
+    Compositional band: strong  (|residual| = 0.3581%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+  EDGE: mu/s
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/b        t14         +1      73.4983        73      -0.6780%
+    b/s        t11         +1      46.9767        47      +0.0495%
+    t/tau      t14         -1      46.2081        46      -0.4504%
+    tau/mu     t11         -1      16.9865        17      +0.0794%
+
+    Directed observed:  4.398837e+00
+    Directed predicted: 4.387468e+00
+    Signed compositional residual:  -0.2585%
+    Implied compositional residual: -0.2585%
+    Identity check discrepancy:     -1.11e-16
+    Identity check: OK
+    Direct grammar fit: orient=mu>s, R_obs=4.3988, fit=5 (5), residual=13.6664%
+    Compositional band: strong  (|residual| = 0.2585%)
+    Quadrant: [direct large/none AND compositional small — tree predicts better than local grammar candidate]
+
+  EDGE: b/tau
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+    Factors used in composition:
+    label      source    sign        R_obs   val_fit    signed_res
+    ────────── ──────── ───── ──────────── ───────── ─────────────
+    t/tau      t14         +1      46.2081        46      -0.4504%
+    t/b        t14         -1      73.4983        73      -0.6780%
+
+    Directed observed:  6.286959e-01
+    Directed predicted: 6.301370e-01
+    Signed compositional residual:  +0.2292%
+    Implied compositional residual: +0.2292%
+    Identity check discrepancy:     +2.30e-17
+    Identity check: OK
+    Direct grammar fit: below floor (R_obs=1.5906 < 3.0)
+    Compositional band: strong  (|residual| = 0.2292%)
+    Quadrant: (direct fit below floor; only compositional column applies)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+GRAND SUMMARY — COMPOSITIONAL RESIDUAL BAND PER CELL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Scale                  c/s           d/u           u/e          c/mu           d/e          mu/s         b/tau
+──────────── ───────────── ───────────── ───────────── ───────────── ───────────── ───────────── ─────────────
+M_Z            0.8% strong   0.6% strong   0.3% strong   0.0% strong   0.3% strong   0.8% strong   0.2% strong
+1_TeV          1.3% strong   1.0% strong   0.6% strong   0.9% strong   1.7% strong   2.2% strong   1.6% strong
+3_TeV          0.1% strong   1.1% strong   2.3% strong   1.7% strong   1.2% strong   1.8% strong   1.8% strong
+10_TeV         0.8% strong   0.5% strong   0.8% strong   1.4% strong   1.3% strong   0.6% strong   0.3% strong
+100_TeV        6.0% modest   6.3% modest   0.3% strong   0.2% strong   6.5% modest   6.2% modest   3.9% strong
+1e7_GeV        3.7% strong   3.7% strong   2.0% strong   1.8% strong   5.6% modest   5.6% modest   1.2% strong
+1e9_GeV        6.2% modest   5.5% modest   1.1% strong   1.0% strong   6.7% modest   7.2% modest   3.1% strong
+1e12_GeV       3.1% strong   3.3% strong   0.9% strong   0.9% strong   4.3% strong   3.9% strong   2.0% strong
+1e16_GeV       0.6% strong   0.6% strong   0.3% strong   0.3% strong   0.4% strong   0.3% strong   0.2% strong
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+IDENTITY CHECK SUMMARY (bookkeeping diagnostic)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Identity check: 63/63  max |discrepancy| = 5.45e-16
+  Tolerance: 1e-09
+  All identity checks pass — bookkeeping is correct.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+AGGREGATE — CELL-LEVEL BANDS (N/63)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Strong:  53/63
+  Modest:  10/63
+  Weak:    0/63
+  None:    0/63
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+AGGREGATE — PER-EDGE BANDS (N/9)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  edge       strong   modest     weak     none    mean |resid|
+  ──────── ──────── ──────── ──────── ────────  ──────────────
+  c/s            7/9       2/9       0/9       0/9           2.52%
+  d/u            7/9       2/9       0/9       0/9           2.50%
+  u/e            9/9       0/9       0/9       0/9           0.97%
+  c/mu           9/9       0/9       0/9       0/9           0.92%
+  d/e            6/9       3/9       0/9       0/9           3.10%
+  mu/s           6/9       3/9       0/9       0/9           3.18%
+  b/tau          9/9       0/9       0/9       0/9           1.59%
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CHALLENGING QUADRANT — direct fit small (<= 3%) AND compositional large (> 5%)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  scale        edge       comp resid   direct resid
+  ──────────── ──────── ──────────── ──────────────
+  1e9_GeV      d/e             6.65%          1.70%
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CHAIN HYPOTHESIS — INTERPRETATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Strong+modest: 63/63
+  Weak+none:     0/63
+
+  All cells in strong/modest band. Chain hypothesis supported
+  on closure across the held-out cross-family graph.
+
+Total runtime: 0.0s
+Done.

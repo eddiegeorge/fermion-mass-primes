@@ -1,0 +1,377 @@
+====================================================================================================
+FERMION MASS PRIMES TEST 18
+Hierarchy-matched 9 charged-mass null
+====================================================================================================
+Per-scale joint-structure null. Tests whether the real per-scale
+co-occurrence of (within-family sub-percent fits, cross-family fits,
+clean chain residuals) is unusual under random plausible hierarchies.
+
+Reading rules (pre-committed, per scale):
+  Strong:  fraction matching or exceeding < 0.1%
+  Modest:  < 1%
+  Weak:    < 5%
+  None:    >= 5%
+
+Trials per scale: 1,000,000
+Log-span window: real +/- log(2)
+Within-family threshold: 1.0%
+Cross-family threshold:  3.0%
+
+Selected cross-family ratios: ['t/tau', 't/b', 'c/s']
+Scales: 9 common scales (PDG excluded by design)
+Candidates generated: 111411 (2^a x p up to 703366)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: M_Z
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Real rank order (heaviest first): t > b > tau > c > mu > s > d > u > e
+  Real log span S_real = 12.7605
+  Real scores:
+    within-family sub-percent fits (<= 1.0%):  6/6
+    selected cross-family fits (<= 3.0%):     2/3
+    |lepton chain residual|:  0.0753%
+    |down   chain residual|:  0.4017%
+  Running 1,000,000 random systems...
+  ...completed in 141.4s
+
+  Within-family fit count distribution (random systems):
+    count=0:         2 (  0.00%) 
+    count=1:     9,205 (  0.92%) 
+    count=2:    87,662 (  8.77%) ####
+    count=3:   314,726 ( 31.47%) ###############
+    count=4:   408,876 ( 40.89%) ####################
+    count=5:   166,653 ( 16.67%) ########
+    count=6:    12,876 (  1.29%)  <-- real
+
+  Selected cross-family fit count distribution (random systems):
+    count=0:   125,323 ( 12.53%) ######
+    count=1:   430,138 ( 43.01%) #####################
+    count=2:   340,191 ( 34.02%) ################# <-- real
+    count=3:   104,348 ( 10.43%) #####
+
+  Random chain residual percentiles (subsample of 10,000; below-floor excluded):
+    |lepton chain|:  5th=0.341%, 50th=4.382%, 95th=21.039%  (below-floor excluded: 2352/10000)
+    |down   chain|:  5th=0.673%, 50th=8.135%, 95th=25.688%  (below-floor excluded: 7413/10000)
+
+  Match-or-exceed (all four features jointly):
+    0.0009%  (9/1,000,000)
+    Band: strong
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: 1_TeV
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Real rank order (heaviest first): t > b > tau > c > mu > s > d > u > e
+  Real log span S_real = 12.6289
+  Real scores:
+    within-family sub-percent fits (<= 1.0%):  6/6
+    selected cross-family fits (<= 3.0%):     2/3
+    |lepton chain residual|:  1.0622%
+    |down   chain residual|:  0.5989%
+  Running 1,000,000 random systems...
+  ...completed in 127.2s
+
+  Within-family fit count distribution (random systems):
+    count=0:         6 (  0.00%) 
+    count=1:    10,016 (  1.00%) 
+    count=2:    92,130 (  9.21%) ####
+    count=3:   322,365 ( 32.24%) ################
+    count=4:   404,013 ( 40.40%) ####################
+    count=5:   159,683 ( 15.97%) #######
+    count=6:    11,787 (  1.18%)  <-- real
+
+  Selected cross-family fit count distribution (random systems):
+    count=0:   129,232 ( 12.92%) ######
+    count=1:   433,976 ( 43.40%) #####################
+    count=2:   335,698 ( 33.57%) ################ <-- real
+    count=3:   101,094 ( 10.11%) #####
+
+  Random chain residual percentiles (subsample of 10,000; below-floor excluded):
+    |lepton chain|:  5th=0.393%, 50th=4.286%, 95th=21.066%  (below-floor excluded: 2238/10000)
+    |down   chain|:  5th=0.679%, 50th=7.763%, 95th=25.349%  (below-floor excluded: 7427/10000)
+
+  Match-or-exceed (all four features jointly):
+    0.0151%  (151/1,000,000)
+    Band: strong
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: 3_TeV
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Real rank order (heaviest first): t > b > tau > c > mu > s > d > u > e
+  Real log span S_real = 12.5783
+  Real scores:
+    within-family sub-percent fits (<= 1.0%):  6/6
+    selected cross-family fits (<= 3.0%):     2/3
+    |lepton chain residual|:  1.3588%
+    |down   chain residual|:  0.1388%
+  Running 1,000,000 random systems...
+  ...completed in 98.1s
+
+  Within-family fit count distribution (random systems):
+    count=0:         8 (  0.00%) 
+    count=1:    10,241 (  1.02%) 
+    count=2:    94,471 (  9.45%) ####
+    count=3:   325,531 ( 32.55%) ################
+    count=4:   402,102 ( 40.21%) ####################
+    count=5:   156,174 ( 15.62%) #######
+    count=6:    11,473 (  1.15%)  <-- real
+
+  Selected cross-family fit count distribution (random systems):
+    count=0:   130,250 ( 13.03%) ######
+    count=1:   435,364 ( 43.54%) #####################
+    count=2:   334,522 ( 33.45%) ################ <-- real
+    count=3:    99,864 (  9.99%) ####
+
+  Random chain residual percentiles (subsample of 10,000; below-floor excluded):
+    |lepton chain|:  5th=0.360%, 50th=4.338%, 95th=20.336%  (below-floor excluded: 2362/10000)
+    |down   chain|:  5th=0.774%, 50th=7.602%, 95th=25.425%  (below-floor excluded: 7505/10000)
+
+  Match-or-exceed (all four features jointly):
+    0.0034%  (34/1,000,000)
+    Band: strong
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: 10_TeV
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Real rank order (heaviest first): t > b > tau > c > mu > s > d > u > e
+  Real log span S_real = 12.5302
+  Real scores:
+    within-family sub-percent fits (<= 1.0%):  6/6
+    selected cross-family fits (<= 3.0%):     2/3
+    |lepton chain residual|:  1.4307%
+    |down   chain residual|:  0.1706%
+  Running 1,000,000 random systems...
+  ...completed in 112.7s
+
+  Within-family fit count distribution (random systems):
+    count=0:         6 (  0.00%) 
+    count=1:    10,609 (  1.06%) 
+    count=2:    96,078 (  9.61%) ####
+    count=3:   327,276 ( 32.73%) ################
+    count=4:   400,520 ( 40.05%) ####################
+    count=5:   154,289 ( 15.43%) #######
+    count=6:    11,222 (  1.12%)  <-- real
+
+  Selected cross-family fit count distribution (random systems):
+    count=0:   131,523 ( 13.15%) ######
+    count=1:   436,470 ( 43.65%) #####################
+    count=2:   332,964 ( 33.30%) ################ <-- real
+    count=3:    99,043 (  9.90%) ####
+
+  Random chain residual percentiles (subsample of 10,000; below-floor excluded):
+    |lepton chain|:  5th=0.371%, 50th=4.499%, 95th=21.018%  (below-floor excluded: 2357/10000)
+    |down   chain|:  5th=0.799%, 50th=8.456%, 95th=25.357%  (below-floor excluded: 7483/10000)
+
+  Match-or-exceed (all four features jointly):
+    0.0039%  (39/1,000,000)
+    Band: strong
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: 100_TeV
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Real rank order (heaviest first): t > b > tau > c > mu > s > d > u > e
+  Real log span S_real = 12.4499
+  Real scores:
+    within-family sub-percent fits (<= 1.0%):  5/6
+    selected cross-family fits (<= 3.0%):     1/3
+    |lepton chain residual|:  0.2164%
+    |down   chain residual|:  6.7747%
+  Running 1,000,000 random systems...
+  ...completed in 99.8s
+
+  Within-family fit count distribution (random systems):
+    count=0:        10 (  0.00%) 
+    count=1:    11,174 (  1.12%) 
+    count=2:    98,983 (  9.90%) ####
+    count=3:   333,074 ( 33.31%) ################
+    count=4:   397,089 ( 39.71%) ###################
+    count=5:   149,020 ( 14.90%) ####### <-- real
+    count=6:    10,650 (  1.06%) 
+
+  Selected cross-family fit count distribution (random systems):
+    count=0:   133,398 ( 13.34%) ######
+    count=1:   438,534 ( 43.85%) ##################### <-- real
+    count=2:   331,441 ( 33.14%) ################
+    count=3:    96,627 (  9.66%) ####
+
+  Random chain residual percentiles (subsample of 10,000; below-floor excluded):
+    |lepton chain|:  5th=0.383%, 50th=4.450%, 95th=21.129%  (below-floor excluded: 2307/10000)
+    |down   chain|:  5th=0.750%, 50th=8.116%, 95th=25.725%  (below-floor excluded: 7409/10000)
+
+  Match-or-exceed (all four features jointly):
+    0.1083%  (1,083/1,000,000)
+    Band: modest
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: 1e7_GeV
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Real rank order (heaviest first): t > tau > b > c > mu > s > d > u > e
+  Real log span S_real = 12.3252
+  Real scores:
+    within-family sub-percent fits (<= 1.0%):  5/6
+    selected cross-family fits (<= 3.0%):     2/3
+    |lepton chain residual|:  1.2924%
+    |down   chain residual|:  4.5955%
+  Running 1,000,000 random systems...
+  ...completed in 102.5s
+
+  Within-family fit count distribution (random systems):
+    count=0:        20 (  0.00%) 
+    count=1:    14,708 (  1.47%) 
+    count=2:   116,073 ( 11.61%) #####
+    count=3:   303,574 ( 30.36%) ###############
+    count=4:   365,594 ( 36.56%) ##################
+    count=5:   186,662 ( 18.67%) ######### <-- real
+    count=6:    13,369 (  1.34%) 
+
+  Selected cross-family fit count distribution (random systems):
+    count=0:   136,921 ( 13.69%) ######
+    count=1:   442,138 ( 44.21%) ######################
+    count=2:   327,103 ( 32.71%) ################ <-- real
+    count=3:    93,838 (  9.38%) ####
+
+  Random chain residual percentiles (subsample of 10,000; below-floor excluded):
+    |lepton chain|:  5th=0.429%, 50th=5.185%, 95th=21.926%  (below-floor excluded: 4988/10000)
+    |down   chain|:  5th=0.565%, 50th=7.256%, 95th=24.004%  (below-floor excluded: 5591/10000)
+
+  Match-or-exceed (all four features jointly):
+    0.3432%  (3,432/1,000,000)
+    Band: modest
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: 1e9_GeV
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Real rank order (heaviest first): t > tau > b > c > mu > s > d > u > e
+  Real log span S_real = 12.2297
+  Real scores:
+    within-family sub-percent fits (<= 1.0%):  4/6
+    selected cross-family fits (<= 3.0%):     2/3
+    |lepton chain residual|:  1.5926%
+    |down   chain residual|:  4.7441%
+  Running 1,000,000 random systems...
+  ...completed in 103.0s
+
+  Within-family fit count distribution (random systems):
+    count=0:        22 (  0.00%) 
+    count=1:    15,782 (  1.58%) 
+    count=2:   119,989 ( 12.00%) #####
+    count=3:   308,407 ( 30.84%) ###############
+    count=4:   362,627 ( 36.26%) ################## <-- real
+    count=5:   180,604 ( 18.06%) #########
+    count=6:    12,569 (  1.26%) 
+
+  Selected cross-family fit count distribution (random systems):
+    count=0:   140,599 ( 14.06%) #######
+    count=1:   443,760 ( 44.38%) ######################
+    count=2:   324,071 ( 32.41%) ################ <-- real
+    count=3:    91,570 (  9.16%) ####
+
+  Random chain residual percentiles (subsample of 10,000; below-floor excluded):
+    |lepton chain|:  5th=0.430%, 50th=5.348%, 95th=21.690%  (below-floor excluded: 5013/10000)
+    |down   chain|:  5th=0.639%, 50th=7.491%, 95th=24.710%  (below-floor excluded: 5684/10000)
+
+  Match-or-exceed (all four features jointly):
+    0.9074%  (9,074/1,000,000)
+    Band: modest
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: 1e12_GeV
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Real rank order (heaviest first): t > tau > b > c > mu > s > d > u > e
+  Real log span S_real = 12.1208
+  Real scores:
+    within-family sub-percent fits (<= 1.0%):  5/6
+    selected cross-family fits (<= 3.0%):     2/3
+    |lepton chain residual|:  1.5681%
+    |down   chain residual|:  2.5788%
+  Running 1,000,000 random systems...
+  ...completed in 119.9s
+
+  Within-family fit count distribution (random systems):
+    count=0:        16 (  0.00%) 
+    count=1:    16,376 (  1.64%) 
+    count=2:   124,771 ( 12.48%) ######
+    count=3:   313,760 ( 31.38%) ###############
+    count=4:   359,945 ( 35.99%) #################
+    count=5:   173,259 ( 17.33%) ######## <-- real
+    count=6:    11,873 (  1.19%) 
+
+  Selected cross-family fit count distribution (random systems):
+    count=0:   143,456 ( 14.35%) #######
+    count=1:   446,161 ( 44.62%) ######################
+    count=2:   321,192 ( 32.12%) ################ <-- real
+    count=3:    89,191 (  8.92%) ####
+
+  Random chain residual percentiles (subsample of 10,000; below-floor excluded):
+    |lepton chain|:  5th=0.443%, 50th=5.386%, 95th=21.762%  (below-floor excluded: 5029/10000)
+    |down   chain|:  5th=0.632%, 50th=7.311%, 95th=23.847%  (below-floor excluded: 5796/10000)
+
+  Match-or-exceed (all four features jointly):
+    0.2331%  (2,331/1,000,000)
+    Band: modest
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCALE: 1e16_GeV
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Real rank order (heaviest first): t > tau > b > c > mu > s > d > u > e
+  Real log span S_real = 12.0159
+  Real scores:
+    within-family sub-percent fits (<= 1.0%):  6/6
+    selected cross-family fits (<= 3.0%):     3/3
+    |lepton chain residual|:  0.2171%
+    |down   chain residual|:  0.1414%
+  Running 1,000,000 random systems...
+  ...completed in 102.9s
+
+  Within-family fit count distribution (random systems):
+    count=0:        33 (  0.00%) 
+    count=1:    17,804 (  1.78%) 
+    count=2:   130,537 ( 13.05%) ######
+    count=3:   320,262 ( 32.03%) ################
+    count=4:   354,793 ( 35.48%) #################
+    count=5:   165,620 ( 16.56%) ########
+    count=6:    10,951 (  1.10%)  <-- real
+
+  Selected cross-family fit count distribution (random systems):
+    count=0:   147,518 ( 14.75%) #######
+    count=1:   448,956 ( 44.90%) ######################
+    count=2:   317,198 ( 31.72%) ###############
+    count=3:    86,328 (  8.63%) #### <-- real
+
+  Random chain residual percentiles (subsample of 10,000; below-floor excluded):
+    |lepton chain|:  5th=0.453%, 50th=5.491%, 95th=22.437%  (below-floor excluded: 5120/10000)
+    |down   chain|:  5th=0.691%, 50th=7.500%, 95th=24.476%  (below-floor excluded: 5752/10000)
+
+  Match-or-exceed (all four features jointly):
+    0.0001%  (1/1,000,000)
+    Band: strong
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+GRAND SUMMARY — JOINT MATCH-OR-EXCEED FRACTION PER SCALE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  scale         real wf  real cf     |lep|%      |dn|%         match%       band
+  ──────────── ──────── ──────── ────────── ────────── ────────────── ──────────
+  M_Z             6/6      2/3       0.075%     0.402%        0.0009%     strong
+  1_TeV           6/6      2/3       1.062%     0.599%        0.0151%     strong
+  3_TeV           6/6      2/3       1.359%     0.139%        0.0034%     strong
+  10_TeV          6/6      2/3       1.431%     0.171%        0.0039%     strong
+  100_TeV         5/6      1/3       0.216%     6.775%        0.1083%     modest
+  1e7_GeV         5/6      2/3       1.292%     4.595%        0.3432%     modest
+  1e9_GeV         4/6      2/3       1.593%     4.744%        0.9074%     modest
+  1e12_GeV        5/6      2/3       1.568%     2.579%        0.2331%     modest
+  1e16_GeV        6/6      3/3       0.217%     0.141%        0.0001%     strong
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+AGGREGATE EVIDENCE — N OUT OF 9 SCALES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Strong:  5/9
+  Modest:  4/9
+  Weak:    0/9
+  None:    0/9
+
+Note: aggregate is descriptive only. Random systems are generated
+independently per scale; this is not a combined p-value.
+
+Total runtime: 1008.6s
+Done.
